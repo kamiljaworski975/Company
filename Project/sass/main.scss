@@ -12,3 +12,114 @@
 
 // Layout
 @import "layout/grid";
+
+@font-face {
+  font-family: lato;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: lato;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 2em;
+  filter: contrast(40);
+  background-color: black;
+  overflow: hidden;
+}
+
+h1 {
+  color: white;
+  font-size: 8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  filter: blur(0.2rem);
+  display: block;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.typ-1 {
+  animation: letterspacing 10s reverse both infinite cubic-bezier(0.6, 0, 0, 1);
+}
+
+.typ-2 {
+  animation: letterspacing2 10s both infinite cubic-bezier(0.6, 0, 0, 1);
+  animation-delay: 7.8s;
+  opacity: 0;
+}
+
+.typ-3 {
+  animation: letterspacing 10s both infinite cubic-bezier(0.6, 0, 0, 1);
+  animation-delay: 17s;
+  opacity: 0;
+}
+
+@keyframes letterspacing {
+  0% {
+    letter-spacing: -5rem;
+    filter: blur(1.5rem);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+
+  50% {
+    filter: blur(0.5rem);
+  }
+
+  95% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: 1rem;
+    filter: blur(1.5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes letterspacing2 {
+  0% {
+    letter-spacing: -5rem;
+    filter: blur(0.5rem);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+
+  33% {
+    filter: blur(0.5rem);
+  }
+  66% {
+    letter-spacing: 1rem;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    letter-spacing: -5rem;
+    filter: blur(0.5rem);
+    opacity: 0;
+  }
+}
