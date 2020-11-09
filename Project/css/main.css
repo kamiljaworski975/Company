@@ -237,6 +237,15 @@ body {
   color: black;
 }
 
+.heading__primary {
+  color: white;
+  font-size: 8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  display: block;
+}
+
 .heading__secondary {
   font-size: 10.5rem;
   color: #272727;
