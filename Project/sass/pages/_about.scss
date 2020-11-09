@@ -1,0 +1,19 @@
+.section__about {
+    background-color: white;
+
+    &--text {
+        padding: 5rem 0;
+
+        &--bold {
+            font-weight: 700;
+        }
+
+        &--pr {
+            margin-right: 3rem;
+            color: #272727;
+            font-size: 1.4rem;
+            max-width: 85%;
+            margin-bottom: 4rem;
+        }
+    }
+}

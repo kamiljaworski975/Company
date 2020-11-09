@@ -1,0 +1,262 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: black;
+}
+
+.heading__secondary {
+  font-size: 10.5rem;
+  color: #272727;
+  line-height: 11rem;
+  letter-spacing: 0.7rem;
+  margin-bottom: 4rem;
+}
+
+.text__arrow {
+  padding: 4rem 0;
+  color: #999595;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text__arrow--txt {
+  display: inline-block;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+.text__arrow--arr {
+  font-size: 3rem;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 13px;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.btn--red {
+  background-color: #ff7730;
+  border: 1px solid #ff7730;
+  color: white;
+}
+
+.btn--red:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.btn--white {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn--white:hover {
+  background-color: #ff7730;
+  color: white;
+  border: 1px solid #ff7730;
+}
+
+.heart__red {
+  color: #f15a46;
+  font-size: 8rem;
+}
+
+.row {
+  max-width: 119rem;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .row {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
+}
+
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+.row .col-2-of-3 {
+  width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+
+.row .col-2-of-4 {
+  width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem);
+}
+
+.row .col-3-of-4 {
+  width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+}
+
+.row .col-1-of-5 {
+  width: calc((100% - 4 * 6rem) / 5);
+}
+
+.row .col-2-of-5 {
+  width: calc( 2 * ((100% - 4 * 6rem) / 5) + 6rem);
+}
+
+.row .col-3-of-5 {
+  width: calc( 3 * ((100% - 4 * 6rem) / 5) + 2 * 6rem);
+}
+
+.text-row {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .text-row {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+}
+
+.section__about {
+  background-color: white;
+}
+
+.section__about--text {
+  padding: 5rem 0;
+}
+
+.section__about--text--bold {
+  font-weight: 700;
+}
+
+.section__about--text--pr {
+  margin-right: 3rem;
+  color: #272727;
+  font-size: 1.4rem;
+  max-width: 85%;
+  margin-bottom: 4rem;
+}

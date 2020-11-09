@@ -1,15 +1,31 @@
-.btn__red--white{
+.btn {
 
-    background-color:$color-secondary-dark;
-    border: 1px solid $color-secondary-dark;
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 13px;
-    color: white;
     transition: ease-in-out 0.5s;
-    &:hover{
+}
+
+.btn--red {
+    background-color: $color-secondary-dark;
+    border: 1px solid $color-secondary-dark;
+    color: white;
+
+    &:hover {
         background-color: white;
         color: black;
         border: 1px solid black;
+    }
+}
+
+.btn--white {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+
+    &:hover {
+        background-color: $color-secondary-dark;
+        color: white;
+        border: 1px solid $color-secondary-dark;
     }
 }
