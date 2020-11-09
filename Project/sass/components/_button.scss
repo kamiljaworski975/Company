@@ -1,0 +1,15 @@
+.btn__red--white{
+
+    background-color:$color-secondary-dark;
+    border: 1px solid $color-secondary-dark;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 13px;
+    color: white;
+    transition: ease-in-out 0.5s;
+    &:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+}
