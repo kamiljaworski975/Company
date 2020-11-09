@@ -1,6 +1,15 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: $color-grey-dark;
+}
+
+.heading__primary {
+  color: white;
+  font-size: 8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  display: block;
 }

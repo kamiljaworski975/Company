@@ -1,0 +1,88 @@
+@keyframes letterspacing {
+  0% {
+    letter-spacing: 1rem;
+    filter: blur(1.5rem);
+  }
+  2% {
+    opacity: 1;
+  }
+
+  16% {
+    filter: blur(0.5rem);
+  }
+
+  29% {
+    opacity: 1;
+  }
+  57% {
+    letter-spacing: -5rem;
+    filter: blur(1.5rem);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes letterspacing2 {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    letter-spacing: -5rem;
+    filter: blur(0.5rem);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+
+  40% {
+    filter: blur(0.5rem);
+  }
+
+  49% {
+    letter-spacing: 1rem;
+  }
+
+  64% {
+    opacity: 1;
+  }
+
+  72% {
+    letter-spacing: -5rem;
+    filter: blur(0.5rem);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes letterspacing3 {
+  0% {
+    opacity: 0;
+  }
+  62% {
+    letter-spacing: -5rem;
+    filter: blur(1.5rem);
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+
+  87% {
+    filter: blur(0.5rem);
+  }
+
+  96% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: 1rem;
+    filter: blur(1.5rem);
+    opacity: 0;
+  }
+}
