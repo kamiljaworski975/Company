@@ -245,22 +245,64 @@ body {
   margin-bottom: 4rem;
 }
 
-.contact--right {
-  position: fixed;
-  top: 70%;
-  right: 0;
-  font-size: 1rem;
-  color: white;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-  letter-spacing: 0.3rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  z-index: 200000;
+.text__arrow {
+  padding: 4rem 0;
+  color: #999595;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.contact--right-icon {
-  margin-right: 1rem;
+.text__arrow--txt {
+  display: inline-block;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+.text__arrow--arr {
+  font-size: 3rem;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 13px;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.btn--red {
+  background-color: #ff7730;
+  border: 1px solid #ff7730;
+  color: white;
+}
+
+.btn--red:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.btn--white {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn--white:hover {
+  background-color: #ff7730;
+  color: white;
+  border: 1px solid #ff7730;
+}
+
+.heart__red {
+  color: #f15a46;
+  font-size: 8rem;
 }
 
 .row {
@@ -395,4 +437,3 @@ body {
   max-width: 85%;
   margin-bottom: 4rem;
 }
-/*# sourceMappingURL=main.css.map */
