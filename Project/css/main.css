@@ -221,128 +221,215 @@ h1 {
 }
 
 .typ-1 {
-  animation: letterspacing 10s reverse both infinite cubic-bezier(0.6, 0, 0, 1);
+  -webkit-animation: letterspacing 30s both infinite cubic-bezier(0.6, 0, 0, 1);
+          animation: letterspacing 30s both infinite cubic-bezier(0.6, 0, 0, 1);
 }
 
 .typ-2 {
-  -webkit-animation: letterspacing2 10s both infinite cubic-bezier(0.6, 0, 0, 1);
-          animation: letterspacing2 10s both infinite cubic-bezier(0.6, 0, 0, 1);
-  -webkit-animation-delay: 7.8s;
-          animation-delay: 7.8s;
+  -webkit-animation: letterspacing2 30s both infinite cubic-bezier(0.6, 0, 0, 1);
+          animation: letterspacing2 30s both infinite cubic-bezier(0.6, 0, 0, 1);
   opacity: 0;
 }
 
 .typ-3 {
-  -webkit-animation: letterspacing 10s both infinite cubic-bezier(0.6, 0, 0, 1);
-          animation: letterspacing 10s both infinite cubic-bezier(0.6, 0, 0, 1);
-  -webkit-animation-delay: 17s;
-          animation-delay: 17s;
+  -webkit-animation: letterspacing3 30s both infinite cubic-bezier(0.6, 0, 0, 1);
+          animation: letterspacing3 30s both infinite cubic-bezier(0.6, 0, 0, 1);
   opacity: 0;
 }
 
 @-webkit-keyframes letterspacing {
   0% {
+    letter-spacing: 1rem;
+    -webkit-filter: blur(1.5rem);
+            filter: blur(1.5rem);
+  }
+  2% {
+    opacity: 1;
+  }
+  16% {
+    -webkit-filter: blur(0.5rem);
+            filter: blur(0.5rem);
+  }
+  29% {
+    opacity: 1;
+  }
+  57% {
     letter-spacing: -5rem;
     -webkit-filter: blur(1.5rem);
             filter: blur(1.5rem);
     opacity: 0;
   }
-  5% {
-    opacity: 1;
-  }
-  50% {
-    -webkit-filter: blur(0.5rem);
-            filter: blur(0.5rem);
-  }
-  95% {
-    opacity: 1;
-  }
   100% {
-    letter-spacing: 1rem;
-    -webkit-filter: blur(1.5rem);
-            filter: blur(1.5rem);
     opacity: 0;
   }
 }
 
 @keyframes letterspacing {
   0% {
+    letter-spacing: 1rem;
+    -webkit-filter: blur(1.5rem);
+            filter: blur(1.5rem);
+  }
+  2% {
+    opacity: 1;
+  }
+  16% {
+    -webkit-filter: blur(0.5rem);
+            filter: blur(0.5rem);
+  }
+  29% {
+    opacity: 1;
+  }
+  57% {
     letter-spacing: -5rem;
     -webkit-filter: blur(1.5rem);
             filter: blur(1.5rem);
     opacity: 0;
   }
-  5% {
-    opacity: 1;
-  }
-  50% {
-    -webkit-filter: blur(0.5rem);
-            filter: blur(0.5rem);
-  }
-  95% {
-    opacity: 1;
-  }
   100% {
-    letter-spacing: 1rem;
-    -webkit-filter: blur(1.5rem);
-            filter: blur(1.5rem);
     opacity: 0;
   }
 }
 
 @-webkit-keyframes letterspacing2 {
   0% {
+    opacity: 0;
+  }
+  25% {
     letter-spacing: -5rem;
     -webkit-filter: blur(0.5rem);
             filter: blur(0.5rem);
     opacity: 0;
   }
-  5% {
+  35% {
     opacity: 1;
   }
-  33% {
+  40% {
     -webkit-filter: blur(0.5rem);
             filter: blur(0.5rem);
   }
-  66% {
+  49% {
     letter-spacing: 1rem;
   }
-  95% {
+  64% {
     opacity: 1;
   }
-  100% {
+  72% {
     letter-spacing: -5rem;
     -webkit-filter: blur(0.5rem);
             filter: blur(0.5rem);
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
 
 @keyframes letterspacing2 {
   0% {
+    opacity: 0;
+  }
+  25% {
     letter-spacing: -5rem;
     -webkit-filter: blur(0.5rem);
             filter: blur(0.5rem);
     opacity: 0;
   }
-  5% {
+  35% {
     opacity: 1;
   }
-  33% {
+  40% {
     -webkit-filter: blur(0.5rem);
             filter: blur(0.5rem);
   }
-  66% {
+  49% {
     letter-spacing: 1rem;
   }
-  95% {
+  64% {
+    opacity: 1;
+  }
+  72% {
+    letter-spacing: -5rem;
+    -webkit-filter: blur(0.5rem);
+            filter: blur(0.5rem);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes letterspacing3 {
+  0% {
+    opacity: 0;
+  }
+  62% {
+    letter-spacing: -5rem;
+    -webkit-filter: blur(1.5rem);
+            filter: blur(1.5rem);
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  87% {
+    -webkit-filter: blur(0.5rem);
+            filter: blur(0.5rem);
+  }
+  96% {
     opacity: 1;
   }
   100% {
-    letter-spacing: -5rem;
-    -webkit-filter: blur(0.5rem);
-            filter: blur(0.5rem);
+    letter-spacing: 1rem;
+    -webkit-filter: blur(1.5rem);
+            filter: blur(1.5rem);
     opacity: 0;
   }
+}
+
+@keyframes letterspacing3 {
+  0% {
+    opacity: 0;
+  }
+  62% {
+    letter-spacing: -5rem;
+    -webkit-filter: blur(1.5rem);
+            filter: blur(1.5rem);
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  87% {
+    -webkit-filter: blur(0.5rem);
+            filter: blur(0.5rem);
+  }
+  96% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: 1rem;
+    -webkit-filter: blur(1.5rem);
+            filter: blur(1.5rem);
+    opacity: 0;
+  }
+}
+
+p {
+  color: white;
+  font-size: 8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5;
+  -webkit-filter: blur(0.2rem);
+          filter: blur(0.2rem);
+  display: block;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
