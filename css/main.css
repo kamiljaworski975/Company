@@ -19,61 +19,50 @@ ORDER: Base + typography > general layout + grid > page layout > components
   0% {
     letter-spacing: 1rem;
     -webkit-filter: blur(1.5rem);
-    filter: blur(1.5rem);
+            filter: blur(1.5rem);
   }
-
   2% {
     opacity: 1;
   }
-
   16% {
     -webkit-filter: blur(0.5rem);
-    filter: blur(0.5rem);
+            filter: blur(0.5rem);
   }
-
   29% {
     opacity: 1;
   }
-
   57% {
     letter-spacing: -5rem;
     -webkit-filter: blur(1.5rem);
-    filter: blur(1.5rem);
+            filter: blur(1.5rem);
     opacity: 0;
   }
-
   100% {
     opacity: 0;
   }
 }
-
 @keyframes letterspacing {
   0% {
     letter-spacing: 1rem;
     -webkit-filter: blur(1.5rem);
-    filter: blur(1.5rem);
+            filter: blur(1.5rem);
   }
-
   2% {
     opacity: 1;
   }
-
   16% {
     -webkit-filter: blur(0.5rem);
-    filter: blur(0.5rem);
+            filter: blur(0.5rem);
   }
-
   29% {
     opacity: 1;
   }
-
   57% {
     letter-spacing: -5rem;
     -webkit-filter: blur(1.5rem);
-    filter: blur(1.5rem);
+            filter: blur(1.5rem);
     opacity: 0;
   }
-
   100% {
     opacity: 0;
   }
@@ -83,38 +72,31 @@ ORDER: Base + typography > general layout + grid > page layout > components
   0% {
     opacity: 0;
   }
-
   25% {
     letter-spacing: -5rem;
     -webkit-filter: blur(0.5rem);
-    filter: blur(0.5rem);
+            filter: blur(0.5rem);
     opacity: 0;
   }
-
   35% {
     opacity: 1;
   }
-
   40% {
     -webkit-filter: blur(0.5rem);
-    filter: blur(0.5rem);
+            filter: blur(0.5rem);
   }
-
   49% {
     letter-spacing: 1rem;
   }
-
   64% {
     opacity: 1;
   }
-
   72% {
     letter-spacing: -5rem;
     -webkit-filter: blur(0.5rem);
-    filter: blur(0.5rem);
+            filter: blur(0.5rem);
     opacity: 0;
   }
-
   100% {
     opacity: 0;
   }
@@ -124,38 +106,31 @@ ORDER: Base + typography > general layout + grid > page layout > components
   0% {
     opacity: 0;
   }
-
   25% {
     letter-spacing: -5rem;
     -webkit-filter: blur(0.5rem);
-    filter: blur(0.5rem);
+            filter: blur(0.5rem);
     opacity: 0;
   }
-
   35% {
     opacity: 1;
   }
-
   40% {
     -webkit-filter: blur(0.5rem);
-    filter: blur(0.5rem);
+            filter: blur(0.5rem);
   }
-
   49% {
     letter-spacing: 1rem;
   }
-
   64% {
     opacity: 1;
   }
-
   72% {
     letter-spacing: -5rem;
     -webkit-filter: blur(0.5rem);
-    filter: blur(0.5rem);
+            filter: blur(0.5rem);
     opacity: 0;
   }
-
   100% {
     opacity: 0;
   }
@@ -165,31 +140,26 @@ ORDER: Base + typography > general layout + grid > page layout > components
   0% {
     opacity: 0;
   }
-
   62% {
     letter-spacing: -5rem;
     -webkit-filter: blur(1.5rem);
-    filter: blur(1.5rem);
+            filter: blur(1.5rem);
     opacity: 0;
   }
-
   70% {
     opacity: 1;
   }
-
   87% {
     -webkit-filter: blur(0.5rem);
-    filter: blur(0.5rem);
+            filter: blur(0.5rem);
   }
-
   96% {
     opacity: 1;
   }
-
   100% {
     letter-spacing: 1rem;
     -webkit-filter: blur(1.5rem);
-    filter: blur(1.5rem);
+            filter: blur(1.5rem);
     opacity: 0;
   }
 }
@@ -198,31 +168,26 @@ ORDER: Base + typography > general layout + grid > page layout > components
   0% {
     opacity: 0;
   }
-
   62% {
     letter-spacing: -5rem;
     -webkit-filter: blur(1.5rem);
-    filter: blur(1.5rem);
+            filter: blur(1.5rem);
     opacity: 0;
   }
-
   70% {
     opacity: 1;
   }
-
   87% {
     -webkit-filter: blur(0.5rem);
-    filter: blur(0.5rem);
+            filter: blur(0.5rem);
   }
-
   96% {
     opacity: 1;
   }
-
   100% {
     letter-spacing: 1rem;
     -webkit-filter: blur(1.5rem);
-    filter: blur(1.5rem);
+            filter: blur(1.5rem);
     opacity: 0;
   }
 }
@@ -233,7 +198,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
@@ -260,7 +225,7 @@ html {
 
 body {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -272,9 +237,11 @@ body {
   color: black;
 }
 
-.heading__seccondary {
-  font-size: 11.5rem;
-  letter-spacing: .9rem;
+.heading__secondary {
+  font-size: 10.5rem;
+  color: #272727;
+  line-height: 11rem;
+  letter-spacing: 0.7rem;
   margin-bottom: 4rem;
 }
 
@@ -287,8 +254,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .text__arrow--txt {
@@ -301,30 +268,41 @@ body {
   font-size: 3rem;
 }
 
-.btn__red--white {
-  background-color: #ff7730;
-  border: 1px solid #ff7730;
+.btn {
   border-radius: 30px;
   padding: 10px 20px;
   font-size: 13px;
-  color: white;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
 
-.btn__red--white:hover {
+.btn--red {
+  background-color: #ff7730;
+  border: 1px solid #ff7730;
+  color: white;
+}
+
+.btn--red:hover {
   background-color: white;
   color: black;
   border: 1px solid black;
 }
 
-.heading__primary {
+.btn--white {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn--white:hover {
+  background-color: #ff7730;
   color: white;
+  border: 1px solid #ff7730;
+}
+
+.heart__red {
+  color: #f15a46;
   font-size: 8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1;
-  display: block;
 }
 
 .row {
@@ -391,7 +369,7 @@ body {
 }
 
 .row .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+  width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
 }
 
 .row .col-1-of-4 {
@@ -399,11 +377,11 @@ body {
 }
 
 .row .col-2-of-4 {
-  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+  width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem);
 }
 
 .row .col-3-of-4 {
-  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+  width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
 
 .row .col-1-of-5 {
@@ -411,11 +389,11 @@ body {
 }
 
 .row .col-2-of-5 {
-  width: calc(2 * ((100% - 4 * 6rem) / 5) + 6rem);
+  width: calc( 2 * ((100% - 4 * 6rem) / 5) + 6rem);
 }
 
 .row .col-3-of-5 {
-  width: calc(3 * ((100% - 4 * 6rem) / 5) + 2 * 6rem);
+  width: calc( 3 * ((100% - 4 * 6rem) / 5) + 2 * 6rem);
 }
 
 .text-row {
@@ -425,11 +403,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -440,20 +418,22 @@ body {
   }
 }
 
-.section__portfolio {
+.section__about {
   background-color: white;
 }
 
-.section__portfolio--text {
-  padding: 3rem 0;
+.section__about--text {
+  padding: 5rem 0;
 }
 
-.section__portfolio--text--pr {
-  display: inline-block;
+.section__about--text--bold {
+  font-weight: 700;
+}
+
+.section__about--text--pr {
   margin-right: 3rem;
-  font-size: 1.6rem;
-  max-width: 45%;
+  color: #272727;
+  font-size: 1.4rem;
+  max-width: 85%;
   margin-bottom: 4rem;
 }
-
-/*# sourceMappingURL=main.css.map */
