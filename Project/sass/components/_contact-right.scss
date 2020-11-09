@@ -1,0 +1,15 @@
+.contact--right {
+  position: fixed;
+  top: 70%;
+  right: 0;
+  font-size: 1rem;
+  color: white;
+  transform: rotate(270deg);
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 200000;
+  &-icon {
+    margin-right: 1rem;
+  }
+}
