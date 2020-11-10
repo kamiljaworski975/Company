@@ -1,31 +1,63 @@
 .btn {
-
-    border-radius: 30px;
-    padding: 10px 20px;
-    font-size: 13px;
-    transition: ease-in-out 0.5s;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 13px;
+  transition: ease-in-out 0.5s;
 }
 
 .btn--red {
-    background-color: $color-secondary-dark;
-    border: 1px solid $color-secondary-dark;
-    color: white;
+  background-color: $color-secondary-dark;
+  border: 1px solid $color-secondary-dark;
+  color: white;
 
-    &:hover {
-        background-color: white;
-        color: black;
-        border: 1px solid black;
-    }
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
 }
 
 .btn--white {
-    background-color: white;
-    border: 1px solid black;
-    color: black;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
 
-    &:hover {
-        background-color: $color-secondary-dark;
-        color: white;
-        border: 1px solid $color-secondary-dark;
-    }
+  &:hover {
+    background-color: $color-secondary-dark;
+    color: white;
+    border: 1px solid $color-secondary-dark;
+  }
+}
+
+.typ-1 {
+  position: relative;
+  width: 100%;
+  min-height: 49rem;
+}
+
+.typ-4 {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   display: inline-block;
+  //   font-size: 2.5rem;
+  //   transform: translate(-50%, -50%) rotate(270deg);
+
+  //   width: 350px;
+  //   margin-bottom: 6rem;
+
+  margin: 0 auto 1em;
+  font-size: 3rem;
+  width: 0;
+  word-wrap: break-word;
+}
+
+.typ-45 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 400px;
+  display: inline-block;
+  font-size: 2.5rem;
+  transform: translate(-50%, -50%) rotate(270deg);
 }
