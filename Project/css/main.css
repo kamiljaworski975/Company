@@ -768,6 +768,23 @@ body.nav-active .logo-active {
   z-index: -11;
 }
 
+.footer {
+  height: 100vh;
+  background-color: black;
+}
+
+.footer__left {
+  background-color: orange;
+}
+
+.footer__middle {
+  background-color: orange;
+}
+
+.footer__right {
+  background-color: orange;
+}
+
 .header__home {
   width: 100%;
   height: 100vh;
