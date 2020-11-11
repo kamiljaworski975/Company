@@ -23,6 +23,7 @@
     top: 60%;
     transform: translate3d(-50%, -50%, 0);
     overflow: hidden;
+
     @include respond(tab-land) {
       width: 90%;
     }
@@ -36,6 +37,7 @@
   left: 50%;
   top: 50%;
   transform: translate3d(-50%, -50%, 0);
+
   @include respond(tab-land) {
     width: 90%;
     font-size: 7rem;
@@ -98,14 +100,26 @@
   }
 }
 
+.box {
+  @include respond(tab-port) {
+    width: calc((100% - #{$gutter-horizontal}) / 2) !important;
+  }
+
+  @include respond(phone) {
+    width: 100% !important;
+  }
+}
+
 .section__services {
   padding: 10rem 0;
+
   &--heading {
     line-height: 4rem;
   }
 
   &--column {
     width: 100%;
+
     &--heading {
       height: 40rem;
       writing-mode: tb-rl;
@@ -129,9 +143,11 @@
     }
   }
 }
+
 // section PORTFOLIO
 .section__portfolio {
   background-color: white;
+
   &--text {
     &--pr {
       display: inline-block;

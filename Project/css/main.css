@@ -962,6 +962,18 @@ body.nav-active .logo-active {
   max-width: 85%;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .box {
+    width: calc((100% - 6rem) / 2) !important;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .box {
+    width: 100% !important;
+  }
+}
+
 .section__services {
   padding: 10rem 0;
 }
@@ -1022,4 +1034,3 @@ body.nav-active .logo-active {
   height: auto;
   max-width: 100%;
 }
-/*# sourceMappingURL=main.css.map */
