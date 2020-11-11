@@ -129,8 +129,24 @@
     }
   }
 }
+// section PORTFOLIO
+.section__portfolio {
+  background-color: white;
+  &--text {
+    &--pr {
+      display: inline-block;
+      max-width: 40%;
+      font-size: 1.4rem;
+      line-height: 2.8rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
 
-.box {
-  background-color: orange;
-  height: 500px;
+.section__portfolio--img {
+  & img {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+  }
 }
