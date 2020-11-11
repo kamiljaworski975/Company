@@ -8,6 +8,7 @@
   filter: contrast(40);
   background-color: black;
   overflow: hidden;
+
   &--p {
     color: white;
     font-size: 7rem;
@@ -40,10 +41,12 @@
     font-size: 7rem;
   }
 }
+
 .animation--text {
   &--1 {
     animation: letterspacing 30s both infinite cubic-bezier(0.6, 0, 0, 1);
   }
+
   &--2 {
     animation: letterspacing2 30s both infinite cubic-bezier(0.6, 0, 0, 1);
     opacity: 0;
@@ -88,21 +91,46 @@
 // SECTION ABOUT
 
 .section__about {
-  background-color: white;
+  min-height: 100vh;
 
-  &--text {
-    padding: 5rem 0;
+  &--paragraph {
+    max-width: 85%;
+  }
+}
 
-    &--bold {
-      font-weight: 700;
+.section__services--expertise {
+  max-height: 70vh;
+}
+
+.section__services {
+  &--heading {
+    line-height: 4rem;
+  }
+
+  &--column {
+    width: 350px;
+
+    &--heading {
+      height: 500px;
+      writing-mode: tb-rl;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+
+      &--text {
+        transform: rotate(180deg);
+        text-align: left;
+        line-height: 2rem;
+        text-transform: capitalize;
+      }
     }
 
-    &--pr {
-      margin-right: 3rem;
-      color: #272727;
-      font-size: 1.4rem;
-      max-width: 85%;
-      margin-bottom: 4rem;
+    &--img {
+      padding-top: 10rem;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
     }
   }
 }
