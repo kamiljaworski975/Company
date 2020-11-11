@@ -30,3 +30,7 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+::selection {
+  background-color: $color-secondary-dark;
+}

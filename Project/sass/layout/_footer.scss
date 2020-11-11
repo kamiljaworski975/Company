@@ -1,14 +1,32 @@
 .footer {
-  height: 100vh;
+  min-height: 100vh;
   background-color: black;
+  padding: 1rem 0 6rem;
 
   &__left {
-    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 0 0;
+    color: white;
   }
   &__middle {
-    background-color: orange;
+    &--img {
+      width: 100%;
+      text-align: center;
+      transform: translateY(-5rem);
+      @include respond(tab-port) {
+        transform: translateY(0);
+      }
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
   &__right {
-    background-color: orange;
+    color: white;
+  }
+  & h3 {
+    font-size: 6rem;
   }
 }
