@@ -293,6 +293,10 @@ body {
   }
 }
 
+.u-margin-bottom-huge {
+  margin-bottom: 10rem !important;
+}
+
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
 }
@@ -358,6 +362,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.u-text--right {
+  text-align: right;
+}
+
+.u-text--left {
+  text-align: left;
 }
 
 .u-text__red {
@@ -582,7 +594,6 @@ body {
   transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
   transition: transform 0.2s ease, background-color 0.5s ease;
   transition: transform 0.2s ease, background-color 0.5s ease, -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease, background-color 0.5s ease, -webkit-transform 0.2s ease;
 }
 
 .menu-icon__line-left {
@@ -669,7 +680,6 @@ body {
   transition: opacity 0.2s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.2s ease, transform 0.3s ease;
   transition: opacity 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
-  transition: opacity 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 @media screen and (orientation: landscape) {
@@ -739,12 +749,10 @@ body.nav-active .navigation-phone__uk-item {
   opacity: 1;
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
-  -webkit-transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
-  transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
-  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 body.nav-active .navigation-phone__list-item:nth-child(0),
@@ -957,6 +965,24 @@ body.nav-active .logo-active {
 .section__services--column--img {
   padding-top: 10rem;
   width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.section__portfolio {
+  background-color: white;
+}
+
+.section__portfolio--text--pr {
+  display: inline-block;
+  max-width: 40%;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.section__portfolio--img img {
+  width: 80%;
   height: auto;
   max-width: 100%;
 }
