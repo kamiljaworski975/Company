@@ -135,13 +135,25 @@
   }
 }
 
-.section__portfolio{
+.section__portfolio {
   background-color: white;
-      &--text{
-          &--pr{
-              display: inline-block;
-              font-size: 1.6rem;
-              max-width: 45%;   
-          }
-      }
+  &--text {
+    &--pr {
+      display: inline-block;
+      max-width: 40%;
+      font-size: 1.4rem;
+      line-height: 2.8rem;
+      letter-spacing: 0.1rem;
+    }
   }
+}
+
+.section__portfolio--img {
+ 
+  & img {
+    
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+  }
+}
