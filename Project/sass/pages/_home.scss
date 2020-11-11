@@ -134,3 +134,14 @@
     }
   }
 }
+
+.section__portfolio{
+  background-color: white;
+      &--text{
+          &--pr{
+              display: inline-block;
+              font-size: 1.6rem;
+              max-width: 45%;   
+          }
+      }
+  }
