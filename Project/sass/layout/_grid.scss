@@ -2,16 +2,8 @@
   width: $grid-width;
   margin: 0 auto;
 
-  @include respond(tab-port) {
-    // margin-bottom: $gutter-vertical-small;
-
-    // &:not(:last-child) {
-    //   margin-bottom: $gutter-vertical;
-    // }
-  }
-
   @include respond(tab-land) {
-    // padding: 0 2rem;
+    padding: 0 2rem;
   }
 
   @include respond(tab-port) {
