@@ -293,6 +293,10 @@ body {
   }
 }
 
+.u-margin-bottom-huge {
+  margin-bottom: 10rem !important;
+}
+
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
 }
@@ -358,6 +362,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.u-text--right {
+  text-align: right;
+}
+
+.u-text--left {
+  text-align: left;
 }
 
 .u-text__red {
@@ -963,7 +975,15 @@ body.nav-active .logo-active {
 
 .section__portfolio--text--pr {
   display: inline-block;
-  font-size: 1.6rem;
-  max-width: 45%;
+  max-width: 40%;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.section__portfolio--img img {
+  width: 80%;
+  height: auto;
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
