@@ -22,6 +22,9 @@
     top: 60%;
     transform: translate3d(-50%, -50%, 0);
     overflow: hidden;
+    @include respond(tab-land) {
+      width: 90%;
+    }
   }
 }
 
@@ -32,6 +35,10 @@
   left: 50%;
   top: 50%;
   transform: translate3d(-50%, -50%, 0);
+  @include respond(tab-land) {
+    width: 90%;
+    font-size: 7rem;
+  }
 }
 .animation--text {
   &--1 {

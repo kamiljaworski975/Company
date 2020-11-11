@@ -52,3 +52,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
   }
 }
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
