@@ -98,20 +98,16 @@
   }
 }
 
-.section__services--expertise {
-  max-height: 70vh;
-}
-
 .section__services {
+  padding: 10rem 0;
   &--heading {
     line-height: 4rem;
   }
 
   &--column {
-    width: 350px;
-
+    width: 100%;
     &--heading {
-      height: 500px;
+      height: 40rem;
       writing-mode: tb-rl;
       display: flex;
       align-items: center;
@@ -130,7 +126,11 @@
       padding-top: 10rem;
       width: 100%;
       height: auto;
-      max-width: 100%;
     }
   }
+}
+
+.box {
+  background-color: orange;
+  height: 500px;
 }
