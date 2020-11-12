@@ -7,6 +7,7 @@
 }
 
 html {
+  overflow-x: hidden;
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 
@@ -29,6 +30,20 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-tertiary-light;
+  }
 }
 
 ::selection {
