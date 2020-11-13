@@ -1,0 +1,42 @@
+.section__bottom {
+  // min-height: 60vh;
+  padding: 10rem 10rem;
+  @include respond(phone) {
+    padding: 10rem 2rem;
+  }
+  position: relative;
+  color: $color-white;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/assets/images/section-bottom.jpg");
+  background-position: center;
+  background-size: cover;
+
+  & a {
+    text-transform: uppercase;
+  }
+
+  & .col-1-of-3 span {
+    display: block;
+    font-size: 1.6rem;
+  }
+
+  &--left {
+    margin-top: 2rem;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #2b2b2b;
+    z-index: 99999;
+  }
+}
