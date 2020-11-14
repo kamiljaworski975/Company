@@ -41,10 +41,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
       @content;
     } //1200px
   }
+  @if $breakpoint == monitor {
+    @media only screen and (max-width: 112em) {
+      @content;
+    } // max 1800
+  }
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) {
       @content;
-    } //1800
+    } //1800+
   }
   @if $breakpoint == land-scape {
     @media screen and (orientation: landscape) {

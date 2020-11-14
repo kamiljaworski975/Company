@@ -1384,4 +1384,68 @@ body.nav-active .logo-active {
   height: auto;
   max-width: 100%;
 }
+
+.page-contact .section__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.page-contact .section__form h1 {
+  font-size: 3.5rem;
+  margin-bottom: 6rem;
+  text-transform: none;
+}
+
+.page-contact .section__form h2 {
+  font-size: 3rem;
+}
+
+.page-contact .section__form h2::before {
+  content: "";
+  display: block;
+  width: 8rem;
+  height: 2px;
+  background-color: blue;
+  margin-bottom: 2rem;
+}
+
+.page-contact .section__form--left {
+  background-color: red;
+  min-height: 100vh;
+  width: 70%;
+  padding: 2rem 0;
+}
+
+.page-contact .section__form--right {
+  background-color: orange;
+  min-height: 100vh;
+  width: 30%;
+  padding: 2rem 0;
+}
+
+.page-contact .section__form .form__container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.page-contact .section__form .form__container--logo {
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  color: white;
+}
+
+.page-contact .section__form .form__container--right {
+  margin-top: 141px;
+}
+
+@media only screen and (max-width: 112em) {
+  .page-contact .section__form .form__container--right {
+    margin-top: 118px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
