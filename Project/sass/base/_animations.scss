@@ -98,3 +98,42 @@
     transform: scale(1);
   }
 }
+
+@keyframes fade-in-top {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@keyframes fade-out-left {
+  0% {
+    visibility: visible;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out-right {
+  0% {
+    visibility: visible;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
