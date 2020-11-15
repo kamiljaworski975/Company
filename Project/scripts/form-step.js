@@ -8,6 +8,14 @@
     const step2 = document.querySelector(".form__field--step-2");
     const step3 = document.querySelector(".form__field--step-3");
 
+    const checkboxes = Array.from(
+      document.querySelectorAll(".form__field--checkbox")
+    );
+
+    checkboxes[0].addEventListener("change", (e) => {
+      console.log("hm", e.target.checked);
+    });
+
     buttonFirst.addEventListener("click", () => {
       step2.style.animation = "none";
       step1.style.animation = "fade-out-left 1s ease-in both";
