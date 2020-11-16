@@ -250,6 +250,32 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
+@-webkit-keyframes fade-in-bot {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-bot {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @-webkit-keyframes fade-out-left {
   0% {
     visibility: visible;
@@ -1782,6 +1808,15 @@ body.nav-active .logo-active {
           appearance: none;
 }
 
+.page-contact .form__field--error {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: red;
+  -webkit-animation: fade-in-bot 0.4s ease-out both;
+          animation: fade-in-bot 0.4s ease-out both;
+  display: none;
+}
+
 .page-contact .form__next {
   position: relative;
   margin-top: 8rem;
@@ -1918,21 +1953,5 @@ body.nav-active .logo-active {
 .page-contact #form-send,
 .page-contact #form-next-2 {
   margin-top: 1rem;
-}
-
-.kamil {
-  height: 100vh;
-  background-color: #f7f7f7;
-  font-size: 5rem;
-}
-
-.kamil1 {
-  height: 50vh;
-  background-color: red;
-}
-
-.kamil2 {
-  background-color: orange;
-  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */

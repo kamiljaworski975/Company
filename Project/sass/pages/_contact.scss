@@ -222,6 +222,13 @@
     &--select {
       appearance: none;
     }
+    &--error {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: red;
+      animation: fade-in-bot 0.4s ease-out both;
+      display: none;
+    }
   }
   .form__next {
     position: relative;
@@ -320,19 +327,4 @@
   #form-next-2 {
     margin-top: 1rem;
   }
-}
-
-.kamil {
-  height: 100vh;
-  background-color: #f7f7f7;
-  font-size: 5rem;
-}
-
-.kamil1 {
-  height: 50vh;
-  background-color: red;
-}
-.kamil2 {
-  background-color: orange;
-  height: 100%;
 }
