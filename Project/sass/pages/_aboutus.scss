@@ -1,0 +1,36 @@
+.section__aboutus {
+    background-color: white;
+
+    &--img {
+        position: relative;
+        width: 100%;
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &--icon {
+        transition: all 0.3s;
+    }
+
+    &--link {
+        font-size: 2rem;
+        text-decoration: none;
+        color: $color-secondary-dark;
+
+        &:hover .section__aboutus--icon {
+            transform: translateY(5px);
+        }
+    }
+
+    &--underline {
+        height: 0.3rem;
+        width: 20%;
+        background-color: $color-secondary-dark;
+        border: none;
+        border-radius: 1rem;
+    }
+
+}

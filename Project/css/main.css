@@ -1035,8 +1035,40 @@ body.nav-active .logo-active {
   letter-spacing: 0.1rem;
 }
 
-.section__portfolio--img img {
-  width: 80%;
+.section__aboutus {
+  background-color: white;
+}
+
+.section__aboutus--img {
+  position: relative;
+  width: 100%;
+}
+
+.section__aboutus--img img {
+  width: 100%;
   height: auto;
-  max-width: 100%;
+}
+
+.section__aboutus--icon {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.section__aboutus--link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ff7730;
+}
+
+.section__aboutus--link:hover .section__aboutus--icon {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.section__aboutus--underline {
+  height: 0.3rem;
+  width: 20%;
+  background-color: #ff7730;
+  border: none;
+  border-radius: 1rem;
 }
