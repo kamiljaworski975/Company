@@ -698,6 +698,7 @@ a {
 
 .row [class^="col-"] {
   float: left;
+  height: 100%;
 }
 
 .row [class^="col-"]:not(:last-child) {
@@ -1523,6 +1524,12 @@ body.nav-active .logo-active {
   margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .page-contact .section__form h2 {
+    font-size: 4rem;
+  }
+}
+
 .page-contact .section__form .para__form {
   opacity: 0;
   -webkit-animation: fade-in-top 1s ease-in-out 0.1s both;
@@ -1546,11 +1553,7 @@ body.nav-active .logo-active {
 }
 
 .page-contact .section__form--left::-webkit-scrollbar {
-  width: 5px;
-}
-
-.page-contact .section__form--left::-webkit-scrollbar-thumb {
-  background: #666;
+  display: none;
 }
 
 .page-contact .section__form--right {
@@ -1588,19 +1591,24 @@ body.nav-active .logo-active {
   }
 }
 
-.page-contact .form__field {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
 .page-contact .form__field--step-2 {
   display: none;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .page-contact .form__field--step-2 .form__next--steps {
+    margin-right: 0;
+  }
+}
+
 .page-contact .form__field--step-3 {
   display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .page-contact .form__field--step-3 .form__next--steps {
+    margin-right: 0;
+  }
 }
 
 .page-contact .form__field--list {
@@ -1618,6 +1626,14 @@ body.nav-active .logo-active {
   flex: 1 50%;
   padding: 10px;
   margin-left: -10px;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .page-contact .form__field--element {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 100%;
+    flex: 1 100%;
+  }
 }
 
 .page-contact .form__field--element:nth-of-type(1) {
@@ -1663,6 +1679,17 @@ body.nav-active .logo-active {
   position: relative;
 }
 
+.page-contact .form__field--check-label .checkmark-icon {
+  display: none;
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+  font-size: 2.8rem;
+  color: #f15a46;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
 .page-contact .form__field--checkbox {
   position: absolute;
   top: 10px;
@@ -1674,10 +1701,24 @@ body.nav-active .logo-active {
   margin: 0;
 }
 
+.page-contact .form__field--checkbox:checked ~ .form__field--span {
+  background: #f7f7f7;
+}
+
+.page-contact .form__field--checkbox:checked ~ .checkmark-icon {
+  display: block;
+}
+
 .page-contact .form__field--label {
   display: block;
   font-size: 1.6rem;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .page-contact .form__field--label {
+    font-size: 2rem;
+  }
 }
 
 .page-contact .form__field--input, .page-contact .form__field--select, .page-contact .form__field--span {
@@ -1696,6 +1737,12 @@ body.nav-active .logo-active {
   background: #fff;
   cursor: pointer;
   outline: none;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .page-contact .form__field--input, .page-contact .form__field--select, .page-contact .form__field--span {
+    font-size: 2rem;
+  }
 }
 
 .page-contact .form__field--input:focus, .page-contact .form__field--select:focus, .page-contact .form__field--span:focus {
@@ -1754,6 +1801,13 @@ body.nav-active .logo-active {
   width: 100%;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .page-contact .form__next {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .page-contact .form__next::after {
   position: absolute;
   top: 0;
@@ -1779,6 +1833,16 @@ body.nav-active .logo-active {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .page-contact .form__next--back {
+    position: relative;
+    float: left;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 50%;
+            flex: 1 50%;
+  }
+}
+
 .page-contact .form__next--back .icon-arrow {
   margin-right: 1rem;
   font-size: 1.8rem;
@@ -1799,6 +1863,7 @@ body.nav-active .logo-active {
 
 .page-contact .form__box {
   position: relative;
+  width: 100%;
 }
 
 .page-contact .icon__box {
@@ -1819,14 +1884,55 @@ body.nav-active .logo-active {
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .page-contact .container__right h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+}
+
 .page-contact .container__right h4 {
   font-size: 1.8rem;
   color: #f15a46;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .page-contact .container__right h4 {
+    font-size: 2.2rem;
+  }
 }
 
 .page-contact .container__right span {
   display: block;
   font-size: 1.6rem;
   margin: 1rem 0;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .page-contact .container__right span {
+    font-size: 2rem;
+  }
+}
+
+.page-contact #form-send,
+.page-contact #form-next-2 {
+  margin-top: 1rem;
+}
+
+.kamil {
+  height: 100vh;
+  background-color: #f7f7f7;
+  font-size: 5rem;
+}
+
+.kamil1 {
+  height: 50vh;
+  background-color: red;
+}
+
+.kamil2 {
+  background-color: orange;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */

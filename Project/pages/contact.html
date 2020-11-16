@@ -28,10 +28,13 @@
                       <input
                         class="form__field--checkbox"
                         type="checkbox"
-                        value="Branding"
                         name="Branding"
                       />
                       <span class="form__field--span">Branding</span>
+                      <ion-icon
+                        class="checkmark-icon"
+                        name="checkmark-sharp"
+                      ></ion-icon>
                     </label>
                   </li>
                   <li class="form__field--element">
@@ -39,10 +42,15 @@
                       <input
                         class="form__field--checkbox"
                         type="checkbox"
-                        value="Branding"
-                        name="Branding"
+                        name="WebsiteDesign"
                       />
-                      <span class="form__field--span">Branding</span>
+                      <span class="form__field--span"
+                        >Website Design / Development</span
+                      >
+                      <ion-icon
+                        class="checkmark-icon"
+                        name="checkmark-sharp"
+                      ></ion-icon>
                     </label>
                   </li>
                   <li class="form__field--element">
@@ -50,10 +58,13 @@
                       <input
                         class="form__field--checkbox"
                         type="checkbox"
-                        value="Branding"
-                        name="Branding"
+                        name="CustomDev"
                       />
-                      <span class="form__field--span">Branding</span>
+                      <span class="form__field--span">Custom Development</span>
+                      <ion-icon
+                        class="checkmark-icon"
+                        name="checkmark-sharp"
+                      ></ion-icon>
                     </label>
                   </li>
                   <li class="form__field--element">
@@ -61,10 +72,13 @@
                       <input
                         class="form__field--checkbox"
                         type="checkbox"
-                        value="Branding"
-                        name="Branding"
+                        name="LandingPage"
                       />
-                      <span class="form__field--span">Branding</span>
+                      <span class="form__field--span">Landing Page</span>
+                      <ion-icon
+                        class="checkmark-icon"
+                        name="checkmark-sharp"
+                      ></ion-icon>
                     </label>
                   </li>
                   <li class="form__field--element">
@@ -72,10 +86,13 @@
                       <input
                         class="form__field--checkbox"
                         type="checkbox"
-                        value="Branding"
-                        name="Branding"
+                        name="Ecommerce"
                       />
-                      <span class="form__field--span">Branding</span>
+                      <span class="form__field--span">Ecommerce</span>
+                      <ion-icon
+                        class="checkmark-icon"
+                        name="checkmark-sharp"
+                      ></ion-icon>
                     </label>
                   </li>
                   <li class="form__field--element">
@@ -83,10 +100,13 @@
                       <input
                         class="form__field--checkbox"
                         type="checkbox"
-                        value="Branding"
-                        name="Branding"
+                        name="Other"
                       />
-                      <span class="form__field--span">Branding</span>
+                      <span class="form__field--span">Other</span>
+                      <ion-icon
+                        class="checkmark-icon"
+                        name="checkmark-sharp"
+                      ></ion-icon>
                     </label>
                   </li>
                 </ul>
@@ -109,7 +129,7 @@
                   <li class="form__field--element">
                     <label class="form__field--label"> Company Name </label>
                     <input
-                      class="form__field--input"
+                      class="form__field--input step2-input"
                       type="text"
                       value=""
                       name="companyName"
@@ -118,7 +138,7 @@
                   <li class="form__field--element">
                     <label class="form__field--label"> Website </label>
                     <input
-                      class="form__field--input"
+                      class="form__field--input step2-input"
                       type="text"
                       value=""
                       name="Website"
@@ -129,7 +149,11 @@
                       Annual Digital Budget*
                     </label>
                     <div class="icon__box">
-                      <select class="form__field--select" id="budget">
+                      <select
+                        class="form__field--select"
+                        id="budget"
+                        name="Budget"
+                      >
                         <option value=""></option>
                         <option value="volvo">Volvo</option>
                         <option value="saab">Saab</option>
@@ -143,11 +167,15 @@
                     </div>
                   </li>
                   <li class="form__field--element">
-                    <label class="form__field--label" for="budget">
+                    <label class="form__field--label" for="start">
                       When are you looking to get started?*
                     </label>
                     <div class="icon__box">
-                      <select class="form__field--select" id="budget">
+                      <select
+                        class="form__field--select"
+                        id="start"
+                        name="Start"
+                      >
                         <option value=""></option>
                         <option value="volvo">Volvo</option>
                         <option value="saab">Saab</option>
@@ -200,37 +228,37 @@
                   <li class="form__field--element">
                     <label class="form__field--label"> First Name* </label>
                     <input
-                      class="form__field--input"
+                      class="form__field--input step3-input"
                       type="text"
                       value=""
-                      name="Website"
+                      name="FirstName"
                     />
                   </li>
                   <li class="form__field--element">
                     <label class="form__field--label"> Last Name* </label>
                     <input
-                      class="form__field--input"
+                      class="form__field--input step3-input"
                       type="text"
                       value=""
-                      name="Website"
+                      name="LastName"
                     />
                   </li>
                   <li class="form__field--element">
                     <label class="form__field--label"> Email* </label>
                     <input
-                      class="form__field--input"
-                      type="text"
+                      class="form__field--input step3-input"
+                      type="email"
                       value=""
-                      name="Website"
+                      name="Email"
                     />
                   </li>
                   <li class="form__field--element">
                     <label class="form__field--label"> Phone </label>
                     <input
-                      class="form__field--input"
-                      type="text"
+                      class="form__field--input step3-input"
+                      type="tel"
                       value=""
-                      name="Website"
+                      name="Phone"
                     />
                   </li>
                 </ul>

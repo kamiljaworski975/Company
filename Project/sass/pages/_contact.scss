@@ -24,6 +24,9 @@
         background-color: blue;
         margin-bottom: 2rem;
       }
+      @include respond(tab-port) {
+        font-size: 4rem;
+      }
     }
     .para__form {
       opacity: 0;
@@ -41,11 +44,7 @@
         overflow-x: visible;
       }
       &::-webkit-scrollbar {
-        width: 5px;
-      }
-
-      &::-webkit-scrollbar-thumb {
-        background: #666;
+        display: none;
       }
     }
     &--right {
@@ -74,15 +73,21 @@
     }
   }
   .form__field {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     &--step-2 {
       display: none;
+      .form__next--steps {
+        @include respond(phone) {
+          margin-right: 0;
+        }
+      }
     }
     &--step-3 {
       display: none;
+      .form__next--steps {
+        @include respond(phone) {
+          margin-right: 0;
+        }
+      }
     }
     &--list {
       display: flex;
@@ -95,6 +100,11 @@
       flex: 1 50%;
       padding: 10px;
       margin-left: -10px;
+      @include respond(tab-port) {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+        flex: 1 100%;
+      }
       &:nth-of-type(1) {
         opacity: 0;
         animation: fade-in-top 1s ease-in-out 0.2s both;
@@ -125,6 +135,15 @@
       width: 100%;
       cursor: pointer;
       position: relative;
+      & .checkmark-icon {
+        display: none;
+        position: absolute;
+        right: 3rem;
+        top: 50%;
+        font-size: 2.8rem;
+        color: $color-tertiary-light;
+        transform: translate(50%, -50%);
+      }
     }
     &--checkbox {
       position: absolute;
@@ -135,12 +154,21 @@
       opacity: 0;
       visibility: hidden;
       margin: 0;
+      &:checked ~ .form__field--span {
+        background: #f7f7f7;
+      }
+      &:checked ~ .checkmark-icon {
+        display: block;
+      }
     }
     // Page 2
     &--label {
       display: block;
       font-size: 1.6rem;
       margin-bottom: 1rem;
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
     }
     &--input,
     &--select,
@@ -161,6 +189,9 @@
       background: #fff;
       cursor: pointer;
       outline: none;
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
       &:focus {
         border: 1px solid rgb(69, 69, 245);
       }
@@ -202,6 +233,9 @@
     align-items: center;
     padding: 2rem 0;
     width: 100%;
+    @include respond(phone) {
+      flex-wrap: wrap;
+    }
     &::after {
       position: absolute;
       top: 0;
@@ -220,6 +254,11 @@
       left: 0;
       align-items: center;
       cursor: pointer;
+      @include respond(phone) {
+        position: relative;
+        float: left;
+        flex: 1 50%;
+      }
       & .icon-arrow {
         margin-right: 1rem;
         font-size: 1.8rem;
@@ -239,6 +278,7 @@
   }
   .form__box {
     position: relative;
+    width: 100%;
   }
   .icon__box {
     position: relative;
@@ -251,19 +291,48 @@
     }
   }
   .container__right {
-    // background-color: red;
     & h3 {
       font-size: 2.2rem;
       margin-bottom: 1rem;
+      @include respond(tab-port) {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
     }
     & h4 {
       font-size: 1.8rem;
       color: $color-tertiary-light;
+      @include respond(tab-port) {
+        font-size: 2.2rem;
+      }
     }
     & span {
       display: block;
       font-size: 1.6rem;
       margin: 1rem 0;
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
     }
   }
+  #form-send,
+  #form-next-2 {
+    margin-top: 1rem;
+  }
+}
+
+.kamil {
+  height: 100vh;
+  background-color: #f7f7f7;
+  font-size: 5rem;
+}
+
+.kamil1 {
+  height: 50vh;
+  background-color: red;
+}
+.kamil2 {
+  background-color: orange;
+  height: 100%;
 }
