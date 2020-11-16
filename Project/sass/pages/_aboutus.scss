@@ -34,3 +34,52 @@
     }
 
 }
+
+.section__cite {
+    width: 100vw;
+    min-height: 90vh;
+    background-image: linear-gradient(to top,
+            rgba(255, 119, 48, 0.80),
+            rgba(255, 119, 48, 0.80)),
+        url(../../assets/images/computer.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    &--text {
+        width: 50%;
+        margin: auto;
+        color: white;
+
+        &--txt {
+            line-height: 5rem;
+            position: relative;
+        }
+
+        &--underline {
+            height: 0.2rem;
+            width: 10%;
+            background-color: white;
+            border: none;
+            border-radius: 1rem;
+        }
+
+        &--author {
+            font-style: italic;
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 0.3rem;
+        }
+
+        &--icon {
+            position: absolute;
+            top: -70px;
+            left: -180px;
+            font-size: 14rem;
+        }
+    }
+
+
+}

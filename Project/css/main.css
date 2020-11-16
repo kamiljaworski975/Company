@@ -383,6 +383,14 @@ a {
   text-align: left;
 }
 
+.u-text--center {
+  text-align: center;
+}
+
+.u-text--justify {
+  text-align: justify;
+}
+
 .u-text__red {
   color: #f15a46;
 }
@@ -1071,4 +1079,46 @@ body.nav-active .logo-active {
   background-color: #ff7730;
   border: none;
   border-radius: 1rem;
+}
+
+.section__cite {
+  width: 100vw;
+  min-height: 90vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 119, 48, 0.8)), to(rgba(255, 119, 48, 0.8))), url(../../assets/images/computer.jpg);
+  background-image: linear-gradient(to top, rgba(255, 119, 48, 0.8), rgba(255, 119, 48, 0.8)), url(../../assets/images/computer.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.section__cite--text {
+  width: 50%;
+  margin: auto;
+  color: white;
+}
+
+.section__cite--text--txt {
+  line-height: 5rem;
+  position: relative;
+}
+
+.section__cite--text--underline {
+  height: 0.2rem;
+  width: 10%;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+}
+
+.section__cite--text--author {
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+
+.section__cite--text--icon {
+  position: absolute;
+  top: -70px;
+  left: -180px;
+  font-size: 14rem;
 }

@@ -14,7 +14,7 @@
     }
 }
 
-.u-margin-bottom-huge{
+.u-margin-bottom-huge {
     margin-bottom: 10rem !important;
 }
 
@@ -70,12 +70,21 @@
     align-items: center;
 }
 
-.u-text{
-    &--right{
+.u-text {
+    &--right {
         text-align: right;
     }
-    &--left{
+
+    &--left {
         text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--justify {
+        text-align: justify;
     }
 }
 
