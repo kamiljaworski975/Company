@@ -414,15 +414,27 @@ body {
 }
 
 .heading__secondary {
-  font-size: 10.5rem;
-  line-height: 11rem;
+  font-size: 10rem;
+  line-height: 1.2;
   letter-spacing: 0.7rem;
   margin-bottom: 4rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .heading__secondary {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading__secondary {
+    font-size: 6rem;
+  }
+}
+
 .heading__tertiary {
-  font-size: 7rem;
-  line-height: 8rem;
+  font-size: 5.5rem;
+  line-height: 1.4;
   letter-spacing: 0.1rem;
   margin-bottom: 4rem;
 }
@@ -431,7 +443,6 @@ body {
   display: block;
   font-size: 3rem;
   font-weight: 400;
-  line-height: 8rem;
   letter-spacing: 0.1rem;
 }
 
@@ -1265,10 +1276,6 @@ body.nav-active .logo-active {
         justify-self: center;
     padding-bottom: 10rem;
   }
-}
-
-.footer h3 {
-  font-size: 6rem;
 }
 
 .footer__privacy {
