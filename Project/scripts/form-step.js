@@ -1,5 +1,6 @@
 (function () {
   document.addEventListener("DOMContentLoaded", (event) => {
+    const contactForm = document.getElementById("contact-form");
     const buttonFirst = document.getElementById("form-next-1");
     const buttonSecond = document.getElementById("form-next-2");
     const backFirst = document.getElementById("form-back-1");
@@ -124,7 +125,8 @@
     formState.getValueTwo();
     formState.getValueThree();
 
-    buttonFirst.addEventListener("click", () => {
+    buttonFirst.addEventListener("click", (e) => {
+      e.preventDefault();
       if (!checkStep(formState.stepOne)) {
         step2.style.animation = "none";
         step1.style.animation = "fade-out-left 1s ease-in both";
@@ -149,7 +151,8 @@
       }, 500);
     });
 
-    buttonSecond.addEventListener("click", () => {
+    buttonSecond.addEventListener("click", (e) => {
+      e.preventDefault();
       if (checkStepTwo(formState.stepTwo)) {
         startError.style.display = "none";
         budgetError.style.display = "none";
@@ -175,19 +178,21 @@
       }, 500);
     });
 
-    buttonSend.addEventListener("click", () => {
+    buttonSend.addEventListener("click", (e) => {
+      e.preventDefault();
+      contactForm.reset();
       const dataBase = [];
       if (checkStepThree(formState.stepThree)) {
         console.log("idz dalej");
+        firstNameError.style.display = "none";
+        lastNameError.style.display = "none";
+        emailError.style.display = "none";
         dataBase.push(
           formState.stepOne,
           formState.stepTwo,
           formState.stepThree
         );
         console.log(dataBase);
-        firstNameError.style.display = "none";
-        lastNameError.style.display = "none";
-        emailError.style.display = "none";
       } else {
         console.log("brakuje");
       }
