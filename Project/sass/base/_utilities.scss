@@ -63,15 +63,6 @@
   &--right {
     text-align: right;
   }
-  &--left {
-    text-align: left;
-  }
-}
-
-.u-text {
-  &--right {
-    text-align: right;
-  }
 
   &--left {
     text-align: left;
@@ -87,7 +78,7 @@
 }
 
 .u-text__red {
-  color: rgb(241, 90, 70);
+  color: $color-secondary;
 }
 
 .u-text__lighter {

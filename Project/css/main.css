@@ -402,7 +402,7 @@ body {
   font-family: sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #403d39;
+  color: #252422;
 }
 
 .heading__primary {
@@ -551,14 +551,6 @@ a {
   text-align: left;
 }
 
-.u-text--right {
-  text-align: right;
-}
-
-.u-text--left {
-  text-align: left;
-}
-
 .u-text--center {
   text-align: center;
 }
@@ -568,7 +560,7 @@ a {
 }
 
 .u-text__red {
-  color: #f15a46;
+  color: #eb5e28;
 }
 
 .u-text__lighter {
@@ -629,6 +621,18 @@ a {
 }
 
 .btn--white:hover {
+  background-color: #eb5e28;
+  color: #252422;
+  border: 1px solid #252422;
+}
+
+.btn--whiteNoBorder {
+  background-color: #fffcf2;
+  border: 1px solid #eb5e28;
+  color: #252422;
+}
+
+.btn--whiteNoBorder:hover {
   background-color: #eb5e28;
   color: #252422;
   border: 1px solid #252422;
@@ -1963,6 +1967,46 @@ body.nav-active .logo-active {
   background-color: white;
 }
 
+.section__aboutus--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section__aboutus--flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .section__aboutus--flex :not(:last-child) {
+    margin-bottom: 0rem !important;
+  }
+  .section__aboutus--flex div#order1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .section__aboutus--flex div#order2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.section__aboutus--flex h4,
+.section__aboutus--flex p,
+.section__aboutus--flex img {
+  margin-top: 4rem !important;
+}
+
 .section__aboutus--img {
   position: relative;
   width: 100%;
@@ -1981,7 +2025,7 @@ body.nav-active .logo-active {
 .section__aboutus--link {
   font-size: 2rem;
   text-decoration: none;
-  color: red;
+  color: #eb5e28;
 }
 
 .section__aboutus--link:hover .section__aboutus--icon {
@@ -1992,16 +2036,17 @@ body.nav-active .logo-active {
 .section__aboutus--underline {
   height: 0.3rem;
   width: 20%;
-  background-color: red;
+  background-color: #eb5e28;
   border: none;
   border-radius: 1rem;
+  margin-bottom: 3rem;
 }
 
 .section__cite {
   width: 100vw;
   min-height: 90vh;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 119, 48, 0.8)), to(rgba(255, 119, 48, 0.8))), url(../../assets/images/computer.jpg);
-  background-image: linear-gradient(to top, rgba(255, 119, 48, 0.8), rgba(255, 119, 48, 0.8)), url(../../assets/images/computer.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 119, 48, 0.8)), to(rgba(255, 119, 48, 0.8))), url(../../assets/images/website.jpg);
+  background-image: linear-gradient(to top, rgba(255, 119, 48, 0.8), rgba(255, 119, 48, 0.8)), url(../../assets/images/website.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -2039,6 +2084,28 @@ body.nav-active .logo-active {
   font-size: 14rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .section__cite--text {
+    width: 80%;
+  }
+  .section__cite--text--icon {
+    top: -80px;
+    left: -50px;
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section__cite--text {
+    width: 100%;
+  }
+  .section__cite--text--icon {
+    top: -50px;
+    left: 0px;
+    font-size: 6rem;
+  }
+}
+
 .section__gallery--img {
   width: 100%;
   height: auto;
@@ -2055,7 +2122,7 @@ body.nav-active .logo-active {
   font-weight: 700;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  color: red;
+  color: #403d39;
 }
 
 .section__colaboration--col {
@@ -2070,7 +2137,14 @@ body.nav-active .logo-active {
 }
 
 .section__colaboration--border {
-  border-left: 1px solid red;
+  border-left: 1px solid #eb5e28;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section__colaboration--border {
+    border-left: 0;
+    border-top: 1px solid #eb5e28;
+  }
 }
 
 .section__colaboration--button {
@@ -2079,7 +2153,7 @@ body.nav-active .logo-active {
 
 .section__contactus {
   min-height: 60vh;
-  background-color: red;
+  background-color: #eb5e28;
   color: white;
 }
 
@@ -2138,4 +2212,3 @@ body.nav-active .logo-active {
           justify-content: flex-end;
   padding-top: 0.8rem;
 }
-/*# sourceMappingURL=main.css.map */
