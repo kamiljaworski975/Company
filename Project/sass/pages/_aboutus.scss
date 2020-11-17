@@ -30,13 +30,22 @@
 
   }
 
+
+
+
   &--img {
     position: relative;
     width: 100%;
 
     & img {
       width: 100%;
+      box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
       height: auto;
+      transition: all 0.5s;
+
+      &:hover {
+        box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.2);
+      }
     }
   }
 

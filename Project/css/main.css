@@ -2014,7 +2014,16 @@ body.nav-active .logo-active {
 
 .section__aboutus--img img {
   width: 100%;
+  -webkit-box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
   height: auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.section__aboutus--img img:hover {
+  -webkit-box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.2);
 }
 
 .section__aboutus--icon {
