@@ -2793,6 +2793,8 @@ body.nav-active .logo-active {
   width: var(--vertical-long);
   height: var(--horizontal-short);
   background-color: #ff7730;
+  -webkit-box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
   top: 50%;
   left: 50%;
   border-radius: 8px;
