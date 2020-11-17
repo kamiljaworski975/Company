@@ -1,10 +1,17 @@
+.navigation-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
 .logo-active {
   height: 80px;
   width: 80px;
-  position: fixed;
-  z-index: 2;
-  left: 10px;
-  top: 10px;
   cursor: pointer;
   transition: all 1s;
   font-size: 3rem;
@@ -13,16 +20,12 @@
 .menu-icon {
   height: 30px;
   width: 30px;
-  position: fixed;
-  z-index: 2;
-  right: 20px;
-  top: 4rem;
   cursor: pointer;
   &__line {
     height: 2px;
     width: 30px;
     display: block;
-    background-color: white;
+    background: white;
     margin-bottom: 4px;
     -webkit-transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
     transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
@@ -41,7 +44,7 @@
 
 .navigation-phone {
   position: fixed;
-  z-index: 9090000;
+  z-index: 10;
   &::after {
     content: "";
     position: fixed;
@@ -124,7 +127,7 @@ body.nav-active .navigation-phone__content {
   visibility: visible;
 }
 body.nav-active .menu-icon__line {
-  background-color: white;
+  background-color: white !important;
   -webkit-transform: translateX(0) rotate(-45deg);
   transform: translateX(0) rotate(-45deg);
 }
@@ -152,8 +155,7 @@ body.nav-active .navigation-phone:before {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-body.nav-active .navigation-phone__list-item,
-body.nav-active .navigation-phone__uk-item {
+body.nav-active .navigation-phone__list-item {
   opacity: 1;
   -webkit-transform: translateX(0%);
   transform: translateX(0%);

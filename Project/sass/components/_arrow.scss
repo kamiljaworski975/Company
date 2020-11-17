@@ -1,19 +1,18 @@
 .text__arrow {
-    padding: 4rem 0;
-    color: rgb(153, 149, 149);
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    display: flex;
-    align-items: center;
+  padding: 4rem 0;
+  color: $color-primary-light;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
 
-    &--txt {
-        display: inline-block;
-        margin-right: 10px;
-        text-transform: capitalize;
-    }
+  &--txt {
+    display: inline-block;
+    margin-right: 10px;
+    text-transform: capitalize;
+  }
 
-    &--arr {
-
-        font-size: 3rem;
-    }
+  &--arr {
+    font-size: 3rem;
+  }
 }
