@@ -68,6 +68,24 @@
   }
 }
 
+.u-text {
+  &--right {
+    text-align: right;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--justify {
+    text-align: justify;
+  }
+}
+
 .u-text__red {
   color: rgb(241, 90, 70);
 }

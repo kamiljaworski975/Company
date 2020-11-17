@@ -551,6 +551,22 @@ a {
   text-align: left;
 }
 
+.u-text--right {
+  text-align: right;
+}
+
+.u-text--left {
+  text-align: left;
+}
+
+.u-text--center {
+  text-align: center;
+}
+
+.u-text--justify {
+  text-align: justify;
+}
+
 .u-text__red {
   color: #f15a46;
 }
@@ -1941,5 +1957,185 @@ body.nav-active .logo-active {
 
 .page-portfolio .menu-icon__line {
   background-color: black;
+}
+
+.section__aboutus {
+  background-color: white;
+}
+
+.section__aboutus--img {
+  position: relative;
+  width: 100%;
+}
+
+.section__aboutus--img img {
+  width: 100%;
+  height: auto;
+}
+
+.section__aboutus--icon {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.section__aboutus--link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: red;
+}
+
+.section__aboutus--link:hover .section__aboutus--icon {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.section__aboutus--underline {
+  height: 0.3rem;
+  width: 20%;
+  background-color: red;
+  border: none;
+  border-radius: 1rem;
+}
+
+.section__cite {
+  width: 100vw;
+  min-height: 90vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 119, 48, 0.8)), to(rgba(255, 119, 48, 0.8))), url(../../assets/images/computer.jpg);
+  background-image: linear-gradient(to top, rgba(255, 119, 48, 0.8), rgba(255, 119, 48, 0.8)), url(../../assets/images/computer.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.section__cite--text {
+  width: 50%;
+  margin: auto;
+  color: white;
+}
+
+.section__cite--text--txt {
+  line-height: 5rem;
+  position: relative;
+}
+
+.section__cite--text--underline {
+  height: 0.2rem;
+  width: 10%;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+}
+
+.section__cite--text--author {
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+
+.section__cite--text--icon {
+  position: absolute;
+  top: -70px;
+  left: -180px;
+  font-size: 14rem;
+}
+
+.section__gallery--img {
+  width: 100%;
+  height: auto;
+}
+
+.section__gallery--name {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.section__gallery--workplace {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: red;
+}
+
+.section__colaboration--col {
+  white-space: nowrap;
+  padding: 4rem;
+}
+
+.section__colaboration--name {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.section__colaboration--border {
+  border-left: 1px solid red;
+}
+
+.section__colaboration--button {
+  text-transform: uppercase;
+}
+
+.section__contactus {
+  min-height: 60vh;
+  background-color: red;
+  color: white;
+}
+
+.section__contactus--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 10rem;
+}
+
+.section__contactus--social i {
+  margin-left: 2rem;
+  font-size: 3rem;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.section__contactus--social i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.section__contactus--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 3rem;
+}
+
+.section__contactus--links a {
+  margin-left: 2rem;
+  font-size: 3rem;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.section__contactus--links a:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.section__contactus--adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 0.8rem;
 }
 /*# sourceMappingURL=main.css.map */
