@@ -27,11 +27,7 @@
     img {
       margin-top: 4rem !important;
     }
-
   }
-
-
-
 
   &--img {
     position: relative;
@@ -233,4 +229,79 @@
     justify-content: flex-end;
     padding-top: 0.8rem;
   }
+}
+
+:root {
+  --vertical-long: 400px;
+  --vertical-short: 200px;
+  --horizontal-long: 400px;
+  --horizontal-short: 200px;
+  --inner1: 30px;
+  --inner2: 10px;
+  --inner3: 7px;
+  --inner4: 7px;
+}
+
+.container {
+  height: 450px;
+  position: relative;
+}
+
+.card {
+  position: relative;
+  width: var(--vertical-long);
+  height: var(--horizontal-short);
+  background-color: #ff7730;
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+  animation: 8s ease-in-out infinite card1;
+}
+
+.card-inner1 {
+  background-color: #fff;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 5%;
+  right: 5%;
+  border-radius: 50%;
+  animation: 8s ease-in-out infinite inner1;
+}
+
+.card-inner2 {
+  background-color: #fff;
+  position: absolute;
+  opacity: 1;
+  width: var(--inner2);
+  height: var(--inner2);
+  bottom: 31%;
+  left: 5%;
+  border-radius: 50%;
+  animation: 8s ease-in-out infinite inner2;
+}
+
+.card-inner3 {
+  background-color: #fff;
+  position: absolute;
+  opacity: 0%;
+  width: var(--inner3);
+  height: var(--inner3);
+  bottom: 25%;
+  left: 5%;
+  border-radius: 50%;
+  animation: 8s ease-in-out infinite inner3;
+}
+
+.card-inner4 {
+  background-color: #fff;
+  position: absolute;
+  opacity: 0%;
+  width: var(--inner4);
+  height: var(--inner4);
+  bottom: 20%;
+  left: 5%;
+  border-radius: 50%;
+  animation: 8s ease-in-out infinite inner4;
 }
