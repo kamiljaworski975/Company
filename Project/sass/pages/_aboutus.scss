@@ -1,13 +1,47 @@
 .section__aboutus {
   background-color: white;
 
+  &--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column-reverse;
+
+      & :not(:last-child) {
+        margin-bottom: 0rem !important;
+      }
+
+      div#order1 {
+        order: 2;
+      }
+
+      div#order2 {
+        order: 1;
+      }
+    }
+
+    & h4,
+    p,
+    img {
+      margin-top: 4rem !important;
+    }
+  }
+
   &--img {
     position: relative;
     width: 100%;
 
     & img {
       width: 100%;
+      box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
       height: auto;
+      transition: all 0.5s;
+
+      &:hover {
+        box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.2);
+      }
     }
   }
 
@@ -18,7 +52,7 @@
   &--link {
     font-size: 2rem;
     text-decoration: none;
-    color: red;
+    color: $color-secondary;
 
     &:hover .section__aboutus--icon {
       transform: translateY(5px);
@@ -28,21 +62,20 @@
   &--underline {
     height: 0.3rem;
     width: 20%;
-    background-color: red;
+    background-color: $color-secondary;
     border: none;
     border-radius: 1rem;
+    margin-bottom: 3rem;
   }
 }
 
 .section__cite {
   width: 100vw;
   min-height: 90vh;
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       rgba(255, 119, 48, 0.8),
-      rgba(255, 119, 48, 0.8)
-    ),
-    url(../../assets/images/computer.jpg);
+      rgba(255, 119, 48, 0.8)),
+    url(../../assets/images/website.jpg);
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -80,7 +113,29 @@
       left: -180px;
       font-size: 14rem;
     }
+
+    @include respond(tab-port) {
+      width: 80%;
+
+      &--icon {
+        top: -80px;
+        left: -50px;
+        font-size: 8rem;
+      }
+    }
+
+    @include respond(phone) {
+      width: 100%;
+
+      &--icon {
+        top: -50px;
+        left: 0px;
+        font-size: 6rem;
+      }
+    }
   }
+
+
 }
 
 .section__gallery {
@@ -100,7 +155,7 @@
     font-weight: 700;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    color: red;
+    color: $color-primary-light;
   }
 }
 
@@ -117,7 +172,12 @@
   }
 
   &--border {
-    border-left: 1px solid red;
+    border-left: 1px solid $color-secondary;
+
+    @include respond(tab-port) {
+      border-left: 0;
+      border-top: 1px solid $color-secondary;
+    }
   }
 
   &--button {
@@ -127,7 +187,7 @@
 
 .section__contactus {
   min-height: 60vh;
-  background-color: red;
+  background-color: $color-secondary;
   color: white;
 
   &--social {
@@ -169,4 +229,80 @@
     justify-content: flex-end;
     padding-top: 0.8rem;
   }
+}
+
+:root {
+  --vertical-long: 400px;
+  --vertical-short: 200px;
+  --horizontal-long: 400px;
+  --horizontal-short: 200px;
+  --inner1: 30px;
+  --inner2: 10px;
+  --inner3: 7px;
+  --inner4: 7px;
+}
+
+.container {
+  height: 450px;
+  position: relative;
+}
+
+.card {
+  position: relative;
+  width: var(--vertical-long);
+  height: var(--horizontal-short);
+  background-color: #ff7730;
+  box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+  animation: 8s ease-in-out infinite card1;
+}
+
+.card-inner1 {
+  background-color: #fff;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 5%;
+  right: 5%;
+  border-radius: 50%;
+  animation: 8s ease-in-out infinite inner1;
+}
+
+.card-inner2 {
+  background-color: #fff;
+  position: absolute;
+  opacity: 1;
+  width: var(--inner2);
+  height: var(--inner2);
+  bottom: 31%;
+  left: 5%;
+  border-radius: 50%;
+  animation: 8s ease-in-out infinite inner2;
+}
+
+.card-inner3 {
+  background-color: #fff;
+  position: absolute;
+  opacity: 0%;
+  width: var(--inner3);
+  height: var(--inner3);
+  bottom: 25%;
+  left: 5%;
+  border-radius: 50%;
+  animation: 8s ease-in-out infinite inner3;
+}
+
+.card-inner4 {
+  background-color: #fff;
+  position: absolute;
+  opacity: 0%;
+  width: var(--inner4);
+  height: var(--inner4);
+  bottom: 20%;
+  left: 5%;
+  border-radius: 50%;
+  animation: 8s ease-in-out infinite inner4;
 }
