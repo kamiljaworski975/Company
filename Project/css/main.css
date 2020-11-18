@@ -1152,6 +1152,18 @@ a {
   outline: none;
 }
 
+.btn--black {
+  background-color: transparent;
+  border: 1px solid #252422;
+  color: #252422;
+}
+
+.btn--black:hover {
+  background-color: #252422;
+  color: #fffcf2;
+  border: 1px solid #252422;
+}
+
 .btn--red {
   background-color: #eb5e28;
   border: 1px solid #eb5e28;
@@ -1779,7 +1791,7 @@ body.nav-active .logo-active {
 .section__bottom {
   padding: 10rem 10rem;
   position: relative;
-  color: #fff;
+  color: #fffcf2;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/assets/images/section-bottom.jpg");
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/section-bottom.jpg");
   background-position: center;
@@ -2475,7 +2487,7 @@ body.nav-active .logo-active {
 }
 
 .page-portfolio h3 {
-  color: black;
+  color: #252422;
   margin-top: 4rem;
 }
 
@@ -2486,7 +2498,7 @@ body.nav-active .logo-active {
 }
 
 .page-portfolio h3 span {
-  color: #fffcf2;
+  color: #eb5e28;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -2549,8 +2561,16 @@ body.nav-active .logo-active {
   padding: 10rem 0;
 }
 
+.page-portfolio .section__call-action ::-moz-selection {
+  color: #403d39;
+}
+
+.page-portfolio .section__call-action ::selection {
+  color: #403d39;
+}
+
 .page-portfolio .section__call-action--container {
-  background-color: #fffcf2;
+  background-color: #eb5e28;
   padding: 7rem 10rem;
   -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
@@ -2562,11 +2582,11 @@ body.nav-active .logo-active {
 }
 
 .page-portfolio .section__call-action h3 span {
-  color: white;
+  color: #fffcf2;
 }
 
 .page-portfolio .section__call-action .paragraph {
-  color: white;
+  color: #fffcf2;
   margin-bottom: 3rem;
   font-size: 1.4rem;
 }

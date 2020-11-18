@@ -1,12 +1,12 @@
 .page-portfolio {
   & h3 {
-    color: black;
+    color: $color-primary;
     margin-top: 4rem;
     @include respond(phone) {
       margin-top: 0;
     }
     & span {
-      color: $color-tertiary-light;
+      color: $color-secondary;
     }
   }
   .section__portfolio {
@@ -55,8 +55,11 @@
 
   .section__call-action {
     padding: 10rem 0;
+    ::selection {
+      color: $color-primary-light;
+    }
     &--container {
-      background-color: $color-tertiary-light;
+      background-color: $color-secondary;
       padding: 7rem 10rem;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     }
@@ -64,11 +67,11 @@
       margin-bottom: 2rem;
       margin-top: 0;
       span {
-        color: white;
+        color: $color-tertiary-light;
       }
     }
     & .paragraph {
-      color: white;
+      color: $color-tertiary-light;
       margin-bottom: 3rem;
       font-size: 1.4rem;
     }
