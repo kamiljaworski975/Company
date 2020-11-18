@@ -1141,6 +1141,10 @@ a {
   margin-right: 1rem;
 }
 
+[class^="page-"] .contact--right {
+  color: #252422;
+}
+
 .btn {
   border-radius: 30px;
   padding: 1rem 2rem;
@@ -1278,6 +1282,10 @@ a {
 .arrow-top:nth-of-type(3) {
   font-size: 1.5rem;
   margin-top: -1rem;
+}
+
+[class^="page-"] .arrow--back-top {
+  color: #252422;
 }
 
 .row {
@@ -1651,6 +1659,10 @@ body.nav-active .navigation-phone__list-item:nth-child(6) {
 
 body.nav-active .logo-active {
   z-index: -11;
+}
+
+[class^="page-"] .menu-icon__line {
+  background-color: black;
 }
 
 .footer {
@@ -2595,10 +2607,6 @@ body.nav-active .logo-active {
 
 .page-portfolio .section__portfolio .work__element--text h4 {
   margin-bottom: 1.5rem;
-}
-
-.page-portfolio .menu-icon__line {
-  background-color: black;
 }
 
 :root {

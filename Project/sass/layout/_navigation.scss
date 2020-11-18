@@ -204,3 +204,9 @@ body.nav-active .navigation-phone__list-item:nth-child(6) {
 body.nav-active .logo-active {
   z-index: -11;
 }
+
+[class^="page-"] {
+  .menu-icon__line {
+    background-color: black;
+  }
+}

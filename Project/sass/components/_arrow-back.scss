@@ -39,3 +39,9 @@
     margin-top: -1rem;
   }
 }
+
+[class^="page-"] {
+  .arrow--back-top {
+    color: $color-primary;
+  }
+}
