@@ -6,28 +6,40 @@
   display: inline-block;
   cursor: pointer;
   outline: none;
-}
 
-.btn--red {
-  background-color: $color-secondary;
-  border: 1px solid $color-secondary;
-  color: $color-tertiary-light;
-
-  &:hover {
-    background-color: $color-tertiary-light;
-    color: $color-secondary;
-    border: 1px solid $color-primary;
-  }
-}
-
-.btn--white {
-  background-color: $color-tertiary-light;
-  border: 1px solid $color-primary;
-  color: $color-primary;
-
-  &:hover {
+  &--red {
     background-color: $color-secondary;
-    color: $color-primary;
+    border: 1px solid $color-secondary;
+    color: $color-tertiary-light;
+
+    &:hover {
+      background-color: $color-tertiary-light;
+      color: $color-secondary;
+      border: 1px solid $color-primary;
+    }
+  }
+
+  &--white {
+    background-color: $color-tertiary-light;
     border: 1px solid $color-primary;
+    color: $color-primary;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-primary;
+      border: 1px solid $color-primary;
+    }
+  }
+
+  &--whiteNoBorder {
+    background-color: $color-tertiary-light;
+    border: 1px solid $color-secondary;
+    color: $color-primary;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-primary;
+      border: 1px solid $color-primary;
+    }
   }
 }
