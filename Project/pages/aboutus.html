@@ -12,6 +12,50 @@
 </head>
 
 <body class="page-aboutus">
+    <nav class="navigation-phone">
+        <div class="navigation-content">
+          <div class="logo-active">
+            <img src="#" />
+          </div>
+          <div class="menu-icon">
+            <span class="menu-icon__line menu-icon__line-left"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line menu-icon__line-right"></span>
+          </div>
+        </div>
+  
+        <div class="navigation-phone__content">
+          <ul class="navigation-phone__list">
+            <li class="navigation-phone__list-item">
+              <a class="navigation-phone__list-item-a" href="/">Home</a>
+            </li>
+            <li class="navigation-phone__list-item">
+              <a class="navigation-phone__list-item-a" href="./pages/about.html"
+                >About</a
+              >
+            </li>
+            <li class="navigation-phone__list-item">
+              <a
+                class="navigation-phone__list-item-a"
+                href="./pages/services.html"
+                >Projects</a
+              >
+            </li>
+            <li class="navigation-phone__list-item">
+              <a class="navigation-phone__list-item-a" href="./pages/work.html"
+                >Services</a
+              >
+            </li>
+            <li class="navigation-phone__list-item">
+              <a
+                class="navigation-phone__list-item-a"
+                href="./pages/articles.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     <main>
         <section class="section__aboutus">
             <div class="row">
@@ -20,7 +64,7 @@
                         <p class="text__arrow--txt">About Us</p>
                         <div class="text__arrow--arr">&#8594</div>
                     </div>
-                    <h3 class="heading__tertiary">About Hudson</h3>
+                    <h3 class="heading__tertiary">About <span>Hudson</span></h3>
                     <p class="paragraph u-margin-bottom-small">
                         The Hudson team is a creative group of individuals with decades of experience helping businesses
                         flourish online. We’re strategists, designers, writers, and technologists, and while our
@@ -120,43 +164,32 @@
             </div>
         </section>
         <section class="section__colaboration">
-            <div class="row u-margin-bottom-huge">
+            <div class="row">
                 <div class="col-1-of-2 u-flex-column section__colaboration--col">
                     <p class="section__colaboration--name u-margin-top-medium">Work with us</p>
                     <button class="btn btn--red u-pointer u-margin-top-small section__colaboration--button">Let's
                         chat</button>
                 </div>
-                <div class="col-1-of-2 u-flex-column section__colaboration--col section__colaboration--border">
+                <div class="col-1-of-2 u-flex-column section__colaboration--col">
                     <p class="section__colaboration--name u-margin-top-medium">Join our team</p>
                     <button class="btn btn--red u-pointer u-margin-top-small section__colaboration--button">View
                         careers</button>
                 </div>
             </div>
         </section>
-        <section class="section__contactus u-flex-column">
-            <div class="row u-flex-column">
-                <h4 class="heading__quaternary u-text__bold u-text--center">We'd love to know more about you.</h4>
-                <button class="btn btn--whiteNoBorder u-pointer u-margin-top-small section__colaboration--button">View
-                    careers</button>
-            </div>
-            <div class="row section__contactus--social">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github-square"></i>
-            </div>
-            <div class="row section__contactus--links">
-                <p>© 2020 Hudson Integrated, Inc.
-                    Contact | Press | Privacy | Terms</p>
-            </div>
-            <div class="row section__contactus--adress">
-                <p>89 Headquarters Plaza North # 1465 Morristown, NJ 07960 (201) 845-8700</p>
+        <section class="section__call-action">
+            <div class="row">
+                <div class="section__call-action--container">
+                    <h3 class="heading__tertiary">Looking for <span>fresh ideas</span>?</h3>
+                    <p class="paragraph">Just say hello. We would love to learn about your goals and brainstorm ideas together.</p>
+                    <a href="#" class="btn btn--black">Get quote</a>
+                </div>
             </div>
         </section>
     </main>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/8fa2735567.js" crossorigin="anonymous"></script>
+    <script src="../scripts/navigation.js"></script>
 </body>
 
 </html>
