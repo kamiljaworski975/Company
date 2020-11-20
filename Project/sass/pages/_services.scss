@@ -1,0 +1,18 @@
+.page-services {
+  .section__services {
+    & h3 {
+      color: $color-primary;
+      margin-top: 4rem;
+      @include respond(phone) {
+        margin-top: 0;
+      }
+      & span {
+        color: $color-secondary;
+      }
+    }
+    &--paragraph {
+      max-width: 50%;
+      background-color: red;
+    }
+  }
+}
