@@ -1,7 +1,12 @@
 .page-services {
-  .section__services {
+  .section__service {
+    padding-bottom: 10rem;
     &--row {
-      padding: 8rem 0;
+      padding: 12rem 0;
+      &:nth-of-type(odd) {
+        background-color: $color-primary-light;
+        color: $color-tertiary-light;
+      }
     }
     & h3 {
       color: $color-primary;
@@ -16,20 +21,66 @@
     &--paragraph {
       max-width: 70%;
       margin-bottom: 10rem;
+      @include respond(phone) {
+        max-width: 100%;
+      }
     }
     &--service {
       display: flex;
       align-items: flex-start;
       margin-bottom: 8rem;
       position: relative;
+      @include respond(phone) {
+        flex-direction: column;
+      }
       &-img {
         width: 25rem;
         margin-right: 4rem;
+        @include respond(phone) {
+          width: 15rem;
+          margin-bottom: 4rem;
+        }
         & img {
           width: 100%;
           height: auto;
         }
       }
     }
+    &--orange,
+    &--white {
+      padding: 2rem;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.356);
+      transition: all 0.4s;
+      &:hover {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.356);
+      }
+    }
+    &--orange {
+      background: rgba($color-secondary, 1);
+      color: white;
+    }
+  }
+  & .section__portfolio {
+    padding: 10rem 0;
+    // background: $color-primary;
+    // color: white;
+  }
+}
+
+.kamil {
+  position: fixed;
+  top: 0;
+  right: -10%;
+  display: block;
+  z-index: 1;
+  & span {
+    font-size: 50rem;
+    color: rgba($color-secondary, 0.1);
+    filter: drop-shadow(100px 10px 30px black);
+    mix-blend-mode: difference;
+    line-height: 0.8;
+  }
+  @include respond(phone) {
+    right: -60%;
   }
 }
