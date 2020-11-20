@@ -1,5 +1,8 @@
 .page-services {
   .section__services {
+    &--row {
+      padding: 8rem 0;
+    }
     & h3 {
       color: $color-primary;
       margin-top: 4rem;
@@ -11,8 +14,22 @@
       }
     }
     &--paragraph {
-      max-width: 50%;
-      background-color: red;
+      max-width: 70%;
+      margin-bottom: 10rem;
+    }
+    &--service {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 8rem;
+      position: relative;
+      &-img {
+        width: 25rem;
+        margin-right: 4rem;
+        & img {
+          width: 100%;
+          height: auto;
+        }
+      }
     }
   }
 }

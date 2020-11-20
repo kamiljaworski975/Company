@@ -1003,6 +1003,12 @@ body {
   }
 }
 
+.heading__five {
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+}
+
 .paragraph {
   font-size: 1.8rem;
   line-height: 2.8rem;
@@ -1119,6 +1125,10 @@ a {
 
 .u-menu__black {
   background-color: black;
+}
+
+.u-para-width {
+  max-width: 50%;
 }
 
 .contact--right {
@@ -2931,5 +2941,50 @@ body.nav-active .logo-active {
   border-radius: 50%;
   -webkit-animation: 8s ease-in-out infinite inner4;
           animation: 8s ease-in-out infinite inner4;
+}
+
+.page-services .section__services--row {
+  padding: 8rem 0;
+}
+
+.page-services .section__services h3 {
+  color: #252422;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .page-services .section__services h3 {
+    margin-top: 0;
+  }
+}
+
+.page-services .section__services h3 span {
+  color: #eb5e28;
+}
+
+.page-services .section__services--paragraph {
+  max-width: 70%;
+  margin-bottom: 10rem;
+}
+
+.page-services .section__services--service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.page-services .section__services--service-img {
+  width: 25rem;
+  margin-right: 4rem;
+}
+
+.page-services .section__services--service-img img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */
