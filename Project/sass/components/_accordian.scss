@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+// main level
+.ac {
+  border-bottom: 2px solid $color-tertiary-light;
+}
+
+.ac-label {
+  font-weight: 700;
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ac-label:after,
+.ac-input:checked + .ac-label:after {
+  content: "+";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 2em;
+  height: 100%;
+  font-size: 3rem;
+  text-align: center;
+  transition: all 0.1s ease-in;
+}
+
+.ac-input:checked + .ac-label:after {
+  transform: rotate(45deg) translateX(5px);
+}
+
+.ac-input {
+  display: none;
+}
+
+.ac-text {
+  opacity: 0;
+  height: 0;
+  padding: 0 2rem;
+  transition: all 0.05s ease-in-out;
+  overflow: hidden;
+}
+
+.acc-show {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 3rem;
+}

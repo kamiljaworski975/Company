@@ -20,7 +20,7 @@
     }
     &--paragraph {
       max-width: 70%;
-      margin-bottom: 10rem;
+      // margin-bottom: 10rem;
       @include respond(phone) {
         max-width: 100%;
       }
@@ -64,23 +64,5 @@
     padding: 10rem 0;
     // background: $color-primary;
     // color: white;
-  }
-}
-
-.kamil {
-  position: fixed;
-  top: 0;
-  right: -10%;
-  display: block;
-  z-index: 1;
-  & span {
-    font-size: 50rem;
-    color: rgba($color-secondary, 0.1);
-    filter: drop-shadow(100px 10px 30px black);
-    mix-blend-mode: difference;
-    line-height: 0.8;
-  }
-  @include respond(phone) {
-    right: -60%;
   }
 }

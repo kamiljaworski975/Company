@@ -1304,6 +1304,99 @@ a {
   color: #252422;
 }
 
+.watermark {
+  position: fixed;
+  top: 0;
+  right: -10%;
+  display: block;
+  z-index: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.watermark span {
+  font-size: 50rem;
+  color: rgba(235, 94, 40, 0.1);
+  -webkit-filter: drop-shadow(100px 10px 30px black);
+          filter: drop-shadow(100px 10px 30px black);
+  mix-blend-mode: difference;
+  line-height: 0.8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .watermark {
+    right: -60%;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.ac {
+  border-bottom: 2px solid #fffcf2;
+}
+
+.ac-label {
+  font-weight: 700;
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ac-label:after,
+.ac-input:checked + .ac-label:after {
+  content: "+";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 2em;
+  height: 100%;
+  font-size: 3rem;
+  text-align: center;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.ac-input:checked + .ac-label:after {
+  -webkit-transform: rotate(45deg) translateX(5px);
+          transform: rotate(45deg) translateX(5px);
+}
+
+.ac-input {
+  display: none;
+}
+
+.ac-text {
+  opacity: 0;
+  height: 0;
+  padding: 0 2rem;
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  overflow: hidden;
+}
+
+.acc-show {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
 .row {
   width: 80%;
   margin: 0 auto;
@@ -2979,7 +3072,6 @@ body.nav-active .logo-active {
 
 .page-services .section__service--paragraph {
   max-width: 70%;
-  margin-bottom: 10rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -3045,28 +3137,5 @@ body.nav-active .logo-active {
 
 .page-services .section__portfolio {
   padding: 10rem 0;
-}
-
-.kamil {
-  position: fixed;
-  top: 0;
-  right: -10%;
-  display: block;
-  z-index: 1;
-}
-
-.kamil span {
-  font-size: 50rem;
-  color: rgba(235, 94, 40, 0.1);
-  -webkit-filter: drop-shadow(100px 10px 30px black);
-          filter: drop-shadow(100px 10px 30px black);
-  mix-blend-mode: difference;
-  line-height: 0.8;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .kamil {
-    right: -60%;
-  }
 }
 /*# sourceMappingURL=main.css.map */

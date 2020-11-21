@@ -1,0 +1,19 @@
+.watermark {
+  position: fixed;
+  top: 0;
+  right: -10%;
+  display: block;
+  z-index: 0;
+  user-select: none;
+  & span {
+    font-size: 50rem;
+    color: rgba($color-secondary, 0.1);
+    filter: drop-shadow(100px 10px 30px black);
+    mix-blend-mode: difference;
+    line-height: 0.8;
+    user-select: none;
+  }
+  @include respond(phone) {
+    right: -60%;
+  }
+}
