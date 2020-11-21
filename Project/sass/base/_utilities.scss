@@ -89,6 +89,10 @@
   background-color: black;
 }
 
+.u-border-bottom-black {
+  border-bottom: 2px solid $color-primary !important;
+}
+
 .u-para-width {
   max-width: 50%;
   @include respond(phone) {

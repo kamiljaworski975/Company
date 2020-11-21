@@ -20,7 +20,6 @@
     }
     &--paragraph {
       max-width: 70%;
-      // margin-bottom: 10rem;
       @include respond(phone) {
         max-width: 100%;
       }
@@ -62,7 +61,5 @@
   }
   & .section__portfolio {
     padding: 10rem 0;
-    // background: $color-primary;
-    // color: white;
   }
 }

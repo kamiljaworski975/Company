@@ -1127,6 +1127,10 @@ a {
   background-color: black;
 }
 
+.u-border-bottom-black {
+  border-bottom: 2px solid #252422 !important;
+}
+
 .u-para-width {
   max-width: 50%;
 }
@@ -1170,6 +1174,7 @@ a {
   display: inline-block;
   cursor: pointer;
   outline: none;
+  z-index: 2;
 }
 
 .btn--black {
@@ -1917,6 +1922,7 @@ body.nav-active .logo-active {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/section-bottom.jpg");
   background-position: center;
   background-size: cover;
+  z-index: 0;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1947,7 +1953,7 @@ body.nav-active .logo-active {
   width: 100%;
   height: 10px;
   background-color: #2b2b2b;
-  z-index: 99999;
+  z-index: -3;
 }
 
 .section__call-action {
@@ -1977,7 +1983,7 @@ body.nav-active .logo-active {
 
 .section__call-action h3 {
   margin-bottom: 2rem;
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 .section__call-action h3 span {
