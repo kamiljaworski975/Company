@@ -79,17 +79,15 @@
                 Have a look around.
             </h3>
             <div class="section__portfolio--filters">
-                <div class="btn btn--white">view all</div>
-                <div class="btn btn--white">Brand & Desing</div>
-                <div class="btn btn--white">web development</div>
-                <div class="btn btn--white">digital strategy</div>
-                <div class="btn btn--white">ecommerce solutions</div>
+                <div id="all" class="btn btn--white filter-btn">view all</div>
+                <div id="landing" class="btn btn--white filter-btn" >Brand & Desing</div>
+                <div id="website" class="btn btn--white filter-btn" >web development</div>
+                <div id="ecommerce" class="btn btn--white filter-btn" >digital strategy</div>
             </div>
         </div>
-        <div class="section__portfolio--work">
             <div class="row">
-                <div class="col-1-of-2">
-                    <div class="work__element">
+                <div class="section__portfolio--work ">
+                    <div class="work__element filterDiv landing all">
                         <div class="work__element--img">
                             <img src="../assets/images/website.jpg" />
                         </div>
@@ -105,63 +103,55 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-1-of-2">
-                    <div class="work__element">
-                        <div class="work__element--img">
-                            <img src="../assets/images/website.jpg" />
-                        </div>
-                        <div class="work__element--text">
-                            <span>MOVE BUMPERS</span>
-                            <h4 class="heading__quaternary">
-                                Local bumper business goes national with digital strategy
-                                and ecommerce
-                            </h4>
-                            <p class="paragraph">
-                                Brand identify, Digital Marketing, Ecommerce, Web
-                                Development, SEO, UI/UX
-                            </p>
-                        </div>
+                    <div class="work__element filterDiv website all">
+                      <div class="work__element--img">
+                          <img src="../assets/images/website.jpg" />
+                      </div>
+                      <div class="work__element--text">
+                          <span>MOVE BUMPERS</span>
+                          <h4 class="heading__quaternary">
+                              Local bumper business goes national with digital strategy
+                              and ecommerce
+                          </h4>
+                          <p class="paragraph">
+                              Brand identify, Digital Marketing, Ecommerce, Web
+                              Development, SEO, UI/UX
+                          </p>
+                      </div>
+                  </div>
+                  <div class="work__element filterDiv website all">
+                    <div class="work__element--img">
+                        <img src="../assets/images/website.jpg" />
+                    </div>
+                    <div class="work__element--text">
+                        <span>MOVE BUMPERS</span>
+                        <h4 class="heading__quaternary">
+                            Local bumper business goes national with digital strategy
+                            and ecommerce
+                        </h4>
+                        <p class="paragraph">
+                            Brand identify, Digital Marketing, Ecommerce, Web
+                            Development, SEO, UI/UX
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="work__element">
-                        <div class="work__element--img">
-                            <img src="../assets/images/website.jpg" />
-                        </div>
-                        <div class="work__element--text">
-                            <span>MOVE BUMPERS</span>
-                            <h4 class="heading__quaternary">
-                                Local bumper business goes national with digital strategy
-                                and ecommerce
-                            </h4>
-                            <p class="paragraph">
-                                Brand identify, Digital Marketing, Ecommerce, Web
-                                Development, SEO, UI/UX
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1-of-2">
-                    <div class="work__element">
-                        <div class="work__element--img">
-                            <img src="../assets/images/website.jpg" />
-                        </div>
-                        <div class="work__element--text">
-                            <span>MOVE BUMPERS</span>
-                            <h4 class="heading__quaternary">
-                                Local bumper business goes national with digital strategy
-                                and ecommerce
-                            </h4>
-                            <p class="paragraph">
-                                Brand identify, Digital Marketing, Ecommerce, Web
-                                Development, SEO, UI/UX
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <div class="work__element filterDiv ecommerce all">
+                  <div class="work__element--img">
+                      <img src="../assets/images/website.jpg" />
+                  </div>
+                  <div class="work__element--text">
+                      <span>MOVE BUMPERS</span>
+                      <h4 class="heading__quaternary">
+                          Local bumper business goes national with digital strategy
+                          and ecommerce
+                      </h4>
+                      <p class="paragraph">
+                          Brand identify, Digital Marketing, Ecommerce, Web
+                          Development, SEO, UI/UX
+                      </p>
+                  </div>
+              </div>
+
             </div>
         </div>
       </section>
@@ -180,7 +170,7 @@
       <ion-icon class="arrow-top" name="chevron-up-outline"></ion-icon>
       <ion-icon class="arrow-top" name="chevron-up-outline"></ion-icon>
     </div>
-
+    <script src="../scripts/filters.js"></script>
     <script src="../scripts/navigation.js"></script>
   </body>
 </html>

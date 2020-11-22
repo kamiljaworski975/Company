@@ -24,8 +24,21 @@
         text-transform: uppercase;
       }
     }
+    &--work{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
     .work__element {
       margin-bottom: 4rem;
+      flex: 1 40%;
+      margin-right: 6rem;
+      display: none;
+      @include respond(tab-port){
+        margin-right: 0;
+        flex: 1 100%;
+      }
       &--img {
         width: 100%;
         & img {
@@ -52,4 +65,8 @@
       }
     }
   }
+}
+
+.show{
+  display: block !important;
 }
