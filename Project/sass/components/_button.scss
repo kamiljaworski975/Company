@@ -6,7 +6,7 @@
   display: inline-block;
   cursor: pointer;
   outline: none;
-  z-index: 2;
+  z-index: 99999999;
   &--black {
     background-color: transparent;
     border: 1px solid $color-primary;

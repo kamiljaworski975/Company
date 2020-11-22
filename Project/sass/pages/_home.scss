@@ -88,9 +88,10 @@
 
 .section__about {
   min-height: 100vh;
-  background-color: $color-primary-light;
+  background: $color-primary-light;
   color: $color-tertiary-light;
   padding-bottom: 10rem;
+  z-index: 0;
   @include respond(phone) {
     padding-bottom: 0;
   }
