@@ -1464,7 +1464,7 @@ a {
 }
 
 .row .col-2-of-3 {
-  width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
+  width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
 }
 
 .row .col-1-of-4 {
@@ -1484,11 +1484,11 @@ a {
 }
 
 .row .col-2-of-4 {
-  width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem);
+  width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem);
 }
 
 .row .col-3-of-4 {
-  width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+  width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
 
 .row .col-1-of-5 {
@@ -1496,11 +1496,11 @@ a {
 }
 
 .row .col-2-of-5 {
-  width: calc( 2 * ((100% - 4 * 6rem) / 5) + 6rem);
+  width: calc( 2 * ((100% - 4 * 6rem) / 5) + 6rem);
 }
 
 .row .col-3-of-5 {
-  width: calc( 3 * ((100% - 4 * 6rem) / 5) + 2 * 6rem);
+  width: calc( 3 * ((100% - 4 * 6rem) / 5) + 2 * 6rem);
 }
 
 .text-row {
@@ -1567,6 +1567,7 @@ a {
   transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
   transition: transform 0.2s ease, background-color 0.5s ease;
   transition: transform 0.2s ease, background-color 0.5s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.5s ease, -webkit-transform 0.2s ease;
 }
 
 .menu-icon__line-left {
@@ -1653,6 +1654,7 @@ a {
   transition: opacity 0.2s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.2s ease, transform 0.3s ease;
   transition: opacity 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 @media screen and (orientation: landscape) {
@@ -1721,10 +1723,12 @@ body.nav-active .navigation-phone__list-item {
   opacity: 1;
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
-  -webkit-transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 body.nav-active .navigation-phone__list-item:nth-child(0),
