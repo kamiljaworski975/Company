@@ -1402,6 +1402,115 @@ a {
   margin-bottom: 3rem;
 }
 
+.section__aboutus {
+  background-color: #fffcf2;
+  padding-bottom: 15rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section__aboutus {
+    padding: 5rem 0 10rem;
+  }
+}
+
+.section__aboutus h3 {
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section__aboutus h3 {
+    margin-top: 0;
+  }
+}
+
+.section__aboutus h3 span {
+  color: #eb5e28;
+}
+
+.section__aboutus--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section__aboutus--flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .section__aboutus--flex :not(:last-child) {
+    margin-bottom: 0rem !important;
+  }
+  .section__aboutus--flex div#order1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .section__aboutus--flex div#order2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.section__aboutus--flex h4,
+.section__aboutus--flex p,
+.section__aboutus--flex img {
+  margin-top: 4rem !important;
+}
+
+.section__aboutus--img {
+  position: relative;
+  width: 100%;
+}
+
+.section__aboutus--img img {
+  width: 100%;
+  -webkit-box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
+  height: auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.section__aboutus--img img:hover {
+  -webkit-box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.2);
+}
+
+.section__aboutus--icon {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.section__aboutus--link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #eb5e28;
+}
+
+.section__aboutus--link:hover .section__aboutus--icon {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.section__aboutus--underline {
+  height: 0.3rem;
+  width: 20%;
+  background-color: #eb5e28;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
 .row {
   width: 80%;
   margin: 0 auto;
@@ -1464,7 +1573,7 @@ a {
 }
 
 .row .col-2-of-3 {
-  width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
+  width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
 }
 
 .row .col-1-of-4 {
@@ -1484,11 +1593,11 @@ a {
 }
 
 .row .col-2-of-4 {
-  width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem);
+  width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem);
 }
 
 .row .col-3-of-4 {
-  width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+  width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
 
 .row .col-1-of-5 {
@@ -1496,11 +1605,11 @@ a {
 }
 
 .row .col-2-of-5 {
-  width: calc( 2 * ((100% - 4 * 6rem) / 5) + 6rem);
+  width: calc( 2 * ((100% - 4 * 6rem) / 5) + 6rem);
 }
 
 .row .col-3-of-5 {
-  width: calc( 3 * ((100% - 4 * 6rem) / 5) + 2 * 6rem);
+  width: calc( 3 * ((100% - 4 * 6rem) / 5) + 2 * 6rem);
 }
 
 .text-row {
@@ -1567,6 +1676,7 @@ a {
   transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
   transition: transform 0.2s ease, background-color 0.5s ease;
   transition: transform 0.2s ease, background-color 0.5s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.5s ease, -webkit-transform 0.2s ease;
 }
 
 .menu-icon__line-left {
@@ -1653,6 +1763,7 @@ a {
   transition: opacity 0.2s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.2s ease, transform 0.3s ease;
   transition: opacity 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 @media screen and (orientation: landscape) {
@@ -1721,10 +1832,12 @@ body.nav-active .navigation-phone__list-item {
   opacity: 1;
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
-  -webkit-transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: opacity 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 body.nav-active .navigation-phone__list-item:nth-child(0),
@@ -1952,6 +2065,7 @@ body.nav-active .logo-active {
 }
 
 .section__call-action {
+  overflow: hidden;
   padding: 10rem 0;
 }
 
@@ -2767,115 +2881,6 @@ body.nav-active .logo-active {
   background-color: black;
 }
 
-.page-aboutus .section__aboutus {
-  background-color: #fffcf2;
-  padding-bottom: 15rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .page-aboutus .section__aboutus {
-    padding: 5rem 0 10rem;
-  }
-}
-
-.page-aboutus .section__aboutus h3 {
-  margin-top: 4rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .page-aboutus .section__aboutus h3 {
-    margin-top: 0;
-  }
-}
-
-.page-aboutus .section__aboutus h3 span {
-  color: #eb5e28;
-}
-
-.page-aboutus .section__aboutus--flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media only screen and (max-width: 56.25em) {
-  .page-aboutus .section__aboutus--flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .page-aboutus .section__aboutus--flex :not(:last-child) {
-    margin-bottom: 0rem !important;
-  }
-  .page-aboutus .section__aboutus--flex div#order1 {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .page-aboutus .section__aboutus--flex div#order2 {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-}
-
-.page-aboutus .section__aboutus--flex h4,
-.page-aboutus .section__aboutus--flex p,
-.page-aboutus .section__aboutus--flex img {
-  margin-top: 4rem !important;
-}
-
-.page-aboutus .section__aboutus--img {
-  position: relative;
-  width: 100%;
-}
-
-.page-aboutus .section__aboutus--img img {
-  width: 100%;
-  -webkit-box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
-          box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
-  height: auto;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.page-aboutus .section__aboutus--img img:hover {
-  -webkit-box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.2);
-          box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.2);
-}
-
-.page-aboutus .section__aboutus--icon {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.page-aboutus .section__aboutus--link {
-  font-size: 2rem;
-  text-decoration: none;
-  color: #eb5e28;
-}
-
-.page-aboutus .section__aboutus--link:hover .section__aboutus--icon {
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
-}
-
-.page-aboutus .section__aboutus--underline {
-  height: 0.3rem;
-  width: 20%;
-  background-color: #eb5e28;
-  border: none;
-  border-radius: 1rem;
-  margin-bottom: 3rem;
-}
-
 .page-aboutus .section__cite {
   width: 100vw;
   min-height: 90vh;
@@ -3172,4 +3177,3 @@ body.nav-active .logo-active {
 .page-services .section__portfolio {
   padding: 10rem 0;
 }
-/*# sourceMappingURL=main.css.map */
