@@ -34,7 +34,7 @@
 }
 
 .ac-input:checked + .ac-label:after {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translateX(3px);
 }
 
 .ac-input {
