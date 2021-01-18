@@ -5,57 +5,43 @@
   height: 100vh;
   position: relative;
   padding: 2em;
-  // filter: contrast(40);
   background-color: $color-secondary;
   overflow: hidden;
-
-  &--p {
-    color: white;
-    font-size: 7rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 1.5;
-    filter: blur(0.2rem);
-    display: block;
-    width: 80%;
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translate3d(-50%, -50%, 0);
-    overflow: hidden;
-    @include respond(tab-land) {
-      width: 90%;
-    }
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .heading--animated {
-  // filter: blur(0.2rem);
   width: 80%;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  color: $color-tertiary-dark;
+  color: $color-tertiary-light;
   transform: translate3d(-50%, -50%, 0);
+  opacity: 0.7;
+  filter: drop-shadow(40px 20px 4px rgba(0, 0, 0, 0.445));
   @include respond(tab-land) {
     width: 90%;
     font-size: 7rem;
+  }
+  @include respond(phone) {
+    font-size: 5rem;
   }
 }
 
 .animation--text {
   &--1 {
-    animation: letterspacing 30s both infinite cubic-bezier(0.6, 0, 0, 1);
+    left: 50%;
+    top: 30%;
   }
 
   &--2 {
-    animation: letterspacing2 30s both infinite cubic-bezier(0.6, 0, 0, 1);
-    opacity: 0;
+    left: 50%;
+    top: 50%;
   }
 
   &--3 {
-    animation: letterspacing3 30s both infinite cubic-bezier(0.6, 0, 0, 1);
-    opacity: 0;
+    left: 50%;
+    top: 70%;
   }
 }
 
@@ -156,4 +142,9 @@
     height: auto;
     max-width: 100%;
   }
+}
+
+.icon--heart {
+  color: $color-secondary;
+  transform: translateY(1rem);
 }
