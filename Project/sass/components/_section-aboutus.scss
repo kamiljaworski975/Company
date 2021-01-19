@@ -1,87 +1,86 @@
 .section__aboutus {
-    background-color: $color-tertiary-light;
-    padding-bottom: 15rem;
+  padding-bottom: 15rem;
+
+  @include respond(phone) {
+    padding: 5rem 0 10rem;
+  }
+
+  & h3 {
+    margin-top: 4rem;
 
     @include respond(phone) {
-        padding: 5rem 0 10rem;
+      margin-top: 0;
     }
 
-    & h3 {
-        margin-top: 4rem;
+    span {
+      color: $color-secondary;
+    }
+  }
 
-        @include respond(phone) {
-            margin-top: 0;
-        }
+  &--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        span {
-            color: $color-secondary;
-        }
+    @include respond(tab-port) {
+      flex-direction: column-reverse;
+
+      & :not(:last-child) {
+        margin-bottom: 0rem !important;
+      }
+
+      div#order1 {
+        order: 2;
+      }
+
+      div#order2 {
+        order: 1;
+      }
     }
 
-    &--flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @include respond(tab-port) {
-            flex-direction: column-reverse;
-
-            & :not(:last-child) {
-                margin-bottom: 0rem !important;
-            }
-
-            div#order1 {
-                order: 2;
-            }
-
-            div#order2 {
-                order: 1;
-            }
-        }
-
-        & h4,
-        p,
-        img {
-            margin-top: 4rem !important;
-        }
+    & h4,
+    p,
+    img {
+      margin-top: 4rem !important;
     }
+  }
 
-    &--img {
-        position: relative;
-        width: 100%;
+  &--img {
+    position: relative;
+    width: 100%;
 
-        & img {
-            width: 100%;
-            box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
-            height: auto;
-            transition: all 0.5s;
+    & img {
+      width: 100%;
+      box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.3);
+      height: auto;
+      transition: all 0.5s;
 
-            &:hover {
-                box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.2);
-            }
-        }
+      &:hover {
+        box-shadow: 3rem 0.5rem 4.5rem rgba(0, 0, 0, 0.2);
+      }
     }
+  }
 
-    &--icon {
-        transition: all 0.3s;
+  &--icon {
+    transition: all 0.3s;
+  }
+
+  &--link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: $color-secondary;
+
+    &:hover .section__aboutus--icon {
+      transform: translateY(5px);
     }
+  }
 
-    &--link {
-        font-size: 2rem;
-        text-decoration: none;
-        color: $color-secondary;
-
-        &:hover .section__aboutus--icon {
-            transform: translateY(5px);
-        }
-    }
-
-    &--underline {
-        height: 0.3rem;
-        width: 20%;
-        background-color: $color-secondary;
-        border: none;
-        border-radius: 1rem;
-        margin-bottom: 3rem;
-    }
+  &--underline {
+    height: 0.3rem;
+    width: 20%;
+    background-color: $color-secondary;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+  }
 }

@@ -1,15 +1,7 @@
-.navigation-content {
+.logo-active {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 5rem;
-}
-
-.logo-active {
+  left: 4rem;
   height: 80px;
   width: 80px;
   cursor: pointer;
@@ -18,9 +10,13 @@
 }
 
 .menu-icon {
+  position: fixed;
+  top: 2.2rem;
+  right: 4rem;
   height: 30px;
   width: 30px;
   cursor: pointer;
+
   &__line {
     height: 2px;
     width: 30px;
@@ -44,9 +40,9 @@
 
 .navigation-phone {
   position: fixed;
-  z-index: 10;
+  z-index: 10000000000000000;
   &::after {
-    content: "";
+    content: '';
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -205,7 +201,7 @@ body.nav-active .logo-active {
   z-index: -11;
 }
 
-[class^="page-"] {
+[class^='page-'] {
   .menu-icon__line {
     background-color: black;
   }

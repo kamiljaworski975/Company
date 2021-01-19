@@ -5,8 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-  <link rel="stylesheet" href="css/main.css" />
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
   <title>Company</title>
@@ -15,7 +13,6 @@
 <body>
 
   <nav class="navigation-phone">
-    <div class="navigation-content">
       <div class="logo-active">
         <img src="#" />
       </div>
@@ -24,7 +21,6 @@
         <span class="menu-icon__line"></span>
         <span class="menu-icon__line menu-icon__line-right"></span>
       </div>
-    </div>
 
     <div class="navigation-phone__content">
       <ul class="navigation-phone__list">
@@ -32,16 +28,16 @@
           <a class="navigation-phone__list-item-a" href="/">Home</a>
         </li>
         <li class="navigation-phone__list-item">
-          <a class="navigation-phone__list-item-a" href="./pages/about.html">About</a>
+          <a class="navigation-phone__list-item-a" href="./pages/aboutus.html">About</a>
         </li>
         <li class="navigation-phone__list-item">
-          <a class="navigation-phone__list-item-a" href="./pages/services.html">Projects</a>
+          <a class="navigation-phone__list-item-a" href="./pages/portfolio.html">Projects</a>
         </li>
         <li class="navigation-phone__list-item">
-          <a class="navigation-phone__list-item-a" href="./pages/work.html">Services</a>
+          <a class="navigation-phone__list-item-a" href="./pages/services.html">Services</a>
         </li>
         <li class="navigation-phone__list-item">
-          <a class="navigation-phone__list-item-a" href="./pages/articles.html">Contact</a>
+          <a class="navigation-phone__list-item-a" href="./pages/contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -71,7 +67,7 @@
   
   </header>
 
-  <button class="btn--header">&#8595;</button>
+  <button class="btn--header"><a href="#aboutus">&#8595;</a></button>
 
   <div class="contact--right">
     <span class="contact--right-icon">
@@ -84,7 +80,7 @@
     <span>&lt/></span>
   </div>
   <main>
-    <section class="section__aboutus">
+    <section id="aboutus" class="section__aboutus">
       <div class="row">
         <div class="col-3-of-4">
           <div class="text__arrow">
@@ -389,11 +385,6 @@
     <ion-icon class="arrow-top" name="chevron-up-outline"></ion-icon>
   </div>
 
-  <!-- Scripts  -->
-
-  <script>
-    particlesJS.load("particles-js", "./part.json");
-  </script>
 </body>
 
 </html>

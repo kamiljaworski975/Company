@@ -3,7 +3,7 @@
   top: 0;
   right: -10%;
   display: block;
-  z-index: 0;
+  z-index: -1;
   user-select: none;
   & span {
     font-size: 50rem;
@@ -12,6 +12,7 @@
     mix-blend-mode: difference;
     line-height: 0.8;
     user-select: none;
+    z-index: 10;
   }
   @include respond(phone) {
     right: -60%;

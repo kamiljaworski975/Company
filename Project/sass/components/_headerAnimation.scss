@@ -5,21 +5,23 @@
   font-size: 8rem;
   font-weight: 600;
   user-select: none;
+  z-index: 0;
+  color: rgba($color-tertiary-light, 0.7);
 }
 
 .container,
 .container2,
 .container3 {
   position: relative;
-  z-index: 100;
 }
 
 .container {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   margin-right: auto;
+  margin-top: 0 !important;
 }
 .container2 {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .welcome__box {
@@ -31,6 +33,7 @@
 }
 
 .heading__welcome {
+  color: $color-tertiary-light;
   font-size: 8rem;
   padding: 5rem 0;
   opacity: 0;
@@ -42,14 +45,14 @@
   position: absolute;
   width: 2rem;
   height: 2rem;
-  bottom: -20px;
+  bottom: 0;
   left: 2%;
   border-radius: 1.1rem;
   background: radial-gradient(
     ellipse at center,
-    rgba(116, 241, 252, 1) 0%,
-    rgba(50, 230, 255, 1) 73%,
-    rgba(21, 199, 250, 1) 100%
+    $color-primary-light 0%,
+    $color-primary 73%,
+    $color-primary-light 100%
   );
   display: inline-block;
   will-change: width;

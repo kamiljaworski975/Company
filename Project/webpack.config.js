@@ -116,7 +116,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/app.css',
+      filename: 'css/[name].css',
     }),
     new ImageMinimizerPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
@@ -144,8 +144,8 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(environment.paths.source, 'img'),
-          to: path.resolve(environment.paths.output, 'img'),
+          from: path.resolve(environment.paths.source, 'assets'),
+          to: path.resolve(environment.paths.output, 'assets'),
           toType: 'dir',
           globOptions: {
             ignore: ['*.DS_Store', 'Thumbs.db'],

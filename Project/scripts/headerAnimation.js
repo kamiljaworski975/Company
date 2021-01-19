@@ -1,4 +1,3 @@
-import '../style/style.scss';
 import { gsap, TweenMax, TimelineMax, TweenLite } from 'gsap';
 import { CustomEase } from 'gsap/CustomEase';
 import Splitting from 'splitting';
@@ -23,6 +22,8 @@ const welcome2Split = Splitting({ target: welcomeTwo, by: 'chars' })[0].chars;
 const cW = text.offsetWidth;
 const cWave = wave.offsetWidth;
 const conHei = getAbsoluteHeight(container);
+
+console.log(conHei);
 
 function getAbsoluteHeight(el) {
   // Get the DOM Node if you pass in a string
@@ -94,7 +95,7 @@ const animationFunction = () => {
     ease: 'linear',
   });
   tl.to('.wave', {
-    y: conHei + conHei / 2,
+    y: conHei + conHei / 2 - 5,
     duration: 2,
     ease: 'bounce',
   });
@@ -171,15 +172,67 @@ const animationFunction = () => {
 
 setTimeout(animationFunction, 2000);
 
-setTimeout(() => {
-  wave.style.cursor = 'pointer';
-  const waveShow = () => {
+let isClicked = false;
+
+const waveShowAfter = () => {
+  const showTl = new TimelineMax({ delay: 1 });
+  const showTl2 = new TimelineMax({ delay: 2 });
+  isClicked = !isClicked;
+  if (!isClicked) {
     gsap.to(welcomeOne, { opacity: 0, duration: 0.5 });
     gsap.to(welcomeTwo, { opacity: 0, duration: 0.5 });
     gsap.to(wave, { scale: 1, duration: 2, ease: 'bounce' });
     welcomeOne.style.display = 'none';
     welcomeTwo.style.display = 'none';
-    wave.removeEventListener('click', waveShow);
-  };
+  } else {
+    welcomeOne.style.display = 'block';
+    welcomeTwo.style.display = 'block';
+    gsap.to(welcomeOne, { opacity: 1, duration: 1, delay: 1 });
+    gsap.to(welcomeTwo, { opacity: 1, duration: 1, delay: 1 });
+
+    gsap.to(wave, { scale: 100, duration: 2, ease: 'bounce' });
+
+    showTl.staggerFromTo(
+      welcomeSplit.reverse(),
+      2,
+      {
+        y: -145,
+        x: -200,
+        rotation: -90,
+        opacity: 0,
+        ease: 'elastic',
+      },
+      { opacity: 1, y: 0, rotation: 0, x: 0, ease: 'elastic' },
+      0.1
+    );
+
+    showTl2.staggerFromTo(
+      welcome2Split.reverse(),
+      2,
+      {
+        y: -145,
+        x: -200,
+        rotation: -90,
+        opacity: 0,
+        ease: 'elastic',
+      },
+      { opacity: 1, y: 0, rotation: 0, x: 0, ease: 'elastic' },
+      0.1
+    );
+  }
+};
+
+const waveShow = () => {
+  gsap.to(welcomeOne, { opacity: 0, duration: 0.5 });
+  gsap.to(welcomeTwo, { opacity: 0, duration: 0.5 });
+  gsap.to(wave, { scale: 1, duration: 2, ease: 'bounce' });
+  welcomeOne.style.display = 'none';
+  welcomeTwo.style.display = 'none';
+  wave.removeEventListener('click', waveShow);
+  wave.addEventListener('click', waveShowAfter);
+};
+
+setTimeout(() => {
+  wave.style.cursor = 'pointer';
   wave.addEventListener('click', waveShow);
 }, 12000);
