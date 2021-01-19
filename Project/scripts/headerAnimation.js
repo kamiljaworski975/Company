@@ -23,8 +23,6 @@ const cW = text.offsetWidth;
 const cWave = wave.offsetWidth;
 const conHei = getAbsoluteHeight(container);
 
-console.log(conHei);
-
 function getAbsoluteHeight(el) {
   // Get the DOM Node if you pass in a string
   el = typeof el === 'string' ? document.querySelector(el) : el;

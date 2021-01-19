@@ -13,14 +13,18 @@
   .menu-icon__line {
     background-color: black;
   }
-
+  .contact--right a {
+    color: black;
+  }
 
   .section__cite {
     width: 100vw;
     min-height: 90vh;
-    background-image: linear-gradient(to top,
+    background-image: linear-gradient(
+        to top,
         rgba(255, 119, 48, 0.8),
-        rgba(255, 119, 48, 0.8)),
+        rgba(255, 119, 48, 0.8)
+      ),
       url(../../assets/images/website.jpg);
     background-position: center;
     -webkit-background-size: cover;
@@ -110,7 +114,7 @@
     &:after {
       display: block;
       position: absolute;
-      content: "";
+      content: '';
       height: 100%;
       width: 1px;
       background: $color-secondary;
