@@ -22,11 +22,16 @@
   position: absolute;
   bottom: 1rem;
   left: 50%;
+  outline: none;
   transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 1000000;
+  transition: all 0.4s;
   & a {
     color: $color-tertiary-light;
+  }
+  &:hover {
+    transform: translate(-50%, -50%) scale(0.9);
   }
 }
 
