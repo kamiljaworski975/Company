@@ -1,0 +1,63 @@
+.text,
+.text2,
+.text3 {
+  font-family: sans-serif;
+  font-size: 8rem;
+  font-weight: 600;
+  user-select: none;
+  z-index: 0;
+  color: rgba($color-tertiary-light, 0.7);
+  filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0.418));
+}
+
+.container,
+.container2,
+.container3 {
+  position: relative;
+}
+
+.container {
+  margin-bottom: 5rem;
+  margin-right: auto;
+  margin-top: 0 !important;
+}
+.container2 {
+  margin-bottom: 5rem;
+}
+
+.welcome__box {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 9999999;
+}
+
+.heading__welcome {
+  color: $color-tertiary-light;
+  font-size: 8rem;
+  padding: 5rem 0;
+  opacity: 0;
+  cursor: default;
+}
+
+.wave {
+  // wave: width && scale && rotate
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  bottom: 0;
+  left: 2%;
+  border-radius: 1.1rem;
+  background: radial-gradient(
+    ellipse at center,
+    $color-primary-light 0%,
+    $color-primary 73%,
+    $color-primary-light 100%
+  );
+  display: inline-block;
+  will-change: width;
+  transform: translateX(0) scale(0);
+  z-index: 10000;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.418));
+}

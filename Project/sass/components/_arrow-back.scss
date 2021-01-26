@@ -11,6 +11,7 @@
   cursor: pointer;
   z-index: 200000;
   transition: all 0.5s;
+
   &:hover {
     .arrow-top {
       &:nth-of-type(1) {
@@ -40,7 +41,7 @@
   }
 }
 
-[class^="page-"] {
+[class^='page-'] {
   .arrow--back-top {
     color: $color-primary;
   }

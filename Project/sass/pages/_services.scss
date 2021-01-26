@@ -1,4 +1,7 @@
 .page-services {
+  .contact--right a {
+    color: black;
+  }
   .section__service {
     padding-bottom: 10rem;
 
@@ -80,7 +83,6 @@
   }
 }
 
-
 .slider {
   width: 100%;
   background-color: rgba($color-secondary, 0.7);
@@ -100,14 +102,13 @@
   color: black;
 }
 
-
 .slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
 }
 
 .slick-active {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .slick-current {

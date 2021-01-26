@@ -1,4 +1,7 @@
 .page-portfolio {
+  .contact--right a {
+    color: black;
+  }
   & h3 {
     color: $color-primary;
     margin-top: 4rem;
@@ -24,7 +27,7 @@
         text-transform: uppercase;
       }
     }
-    &--work{
+    &--work {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -35,7 +38,7 @@
       flex: 1 40%;
       margin-right: 6rem;
       display: none;
-      @include respond(tab-port){
+      @include respond(tab-port) {
         margin-right: 0;
         flex: 1 100%;
       }
@@ -67,6 +70,6 @@
   }
 }
 
-.show{
+.show {
   display: block !important;
 }

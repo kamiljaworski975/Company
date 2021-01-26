@@ -5,8 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-  <link rel="stylesheet" href="css/main.css" />
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
   <title>Company</title>
@@ -15,7 +13,6 @@
 <body>
 
   <nav class="navigation-phone">
-    <div class="navigation-content">
       <div class="logo-active">
         <img src="#" />
       </div>
@@ -24,7 +21,6 @@
         <span class="menu-icon__line"></span>
         <span class="menu-icon__line menu-icon__line-right"></span>
       </div>
-    </div>
 
     <div class="navigation-phone__content">
       <ul class="navigation-phone__list">
@@ -32,16 +28,16 @@
           <a class="navigation-phone__list-item-a" href="/">Home</a>
         </li>
         <li class="navigation-phone__list-item">
-          <a class="navigation-phone__list-item-a" href="./pages/about.html">About</a>
+          <a class="navigation-phone__list-item-a" href="./pages/aboutus.html">About</a>
         </li>
         <li class="navigation-phone__list-item">
-          <a class="navigation-phone__list-item-a" href="./pages/services.html">Projects</a>
+          <a class="navigation-phone__list-item-a" href="./pages/portfolio.html">Projects</a>
         </li>
         <li class="navigation-phone__list-item">
-          <a class="navigation-phone__list-item-a" href="./pages/work.html">Services</a>
+          <a class="navigation-phone__list-item-a" href="./pages/services.html">Services</a>
         </li>
         <li class="navigation-phone__list-item">
-          <a class="navigation-phone__list-item-a" href="./pages/articles.html">Contact</a>
+          <a class="navigation-phone__list-item-a" href="./pages/contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -50,21 +46,28 @@
   <div id="particles-js"></div>
 
   <header class="header__home">
-    <h1 class="heading__primary heading--animated animation--text--1">
-      WEB DESIGN
-    </h1>
-    <p class="header__home--p animation--text--1">>>>>> >>>>></p>
-    <h1 class="heading__primary heading--animated animation--text--2">
-      WEB DEVELOPMENT
-    </h1>
-    <p class="header__home--p animation--text--2">>>>>> >>>>></p>
-    <h1 class="heading__primary heading--animated animation--text--3">
-      ECOMMERCE SOLUTIONS
-    </h1>
-    <p class="header__home--p animation--text--3">>>>>> >>>>></p>
+    <div class="section__animated">
+      <div class="container">
+        <div class="text">Web Design</div>
+        <div class="wave-rel-wrap">
+          <div class="wave"></div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="text2">Web Development</div>
+      </div>
+      <div class="container3">
+        <div class="text3">Eccomerce</div>
+      </div>
+    </div>
+    <div class="welcome__box">
+      <h2 class="heading__welcome welcome__one">'Hello World'</h2>
+      <h2 class="heading__welcome welcome__two">&#60; JSN Projects /></h2>
+    </div>
+  
   </header>
 
-  <button class="btn--header">&#8595;</button>
+  <button class="btn--header go--about">&#8595;</button>
 
   <div class="contact--right">
     <span class="contact--right-icon">
@@ -77,21 +80,21 @@
     <span>&lt/></span>
   </div>
   <main>
-    <section class="section__aboutus">
+    <section id="aboutus" class="section__aboutus">
       <div class="row">
         <div class="col-3-of-4">
           <div class="text__arrow">
-            <p class="text__arrow--txt">About Us</p>
+            <p class="text__arrow--txt">Portfolio</p>
             <div class="text__arrow--arr">&#8594</div>
           </div>
-          <h3 class="heading__tertiary">About <span>Hudson</span></h3>
+          <h3 class="heading__tertiary">Our <span>Projects</span></h3>
           <p class="paragraph u-margin-bottom-small">
             The Hudson team is a creative group of individuals with decades of experience helping businesses
             flourish online. We’re strategists, designers, writers, and technologists, and while our
             expertise is diverse, we share the same genuine passion for creating outstanding work for our
             clients.
           </p>
-          <a class="paragraph u-pointer section__aboutus--link" href="http://">
+          <a class="paragraph u-pointer section__aboutus--link" href="./pages/contact.html">
             <ion-icon class="section__aboutus--icon" name="arrow-down-circle-outline"></ion-icon> Contact Us
           </a>
         </div>
@@ -113,7 +116,7 @@
             Hudson so special, and beyond the quality and results of our work, they will tell you
             that our team is engaged on a level usually reserved for their internal teams.
           </p>
-          <button class="btn btn--white u-margin-top-small">Explore our projects</button>
+          <a href="./pages/portfolio.html" class="btn btn--white u-margin-top-small">Explore our projects</a>
         </div>
       </div>
       <div class="row u-margin-bottom-small u-margin-top-big section__aboutus--flex">
@@ -130,7 +133,7 @@
             success in the longevity of our client relationships, and our team’s dedication to
             helping businesses move beyond their comfort zones makes that possible.
           </p>
-          <button class="btn btn--white u-margin-top-small">Explore our projects</button>
+          <a href="./pages/portfolio.html" class="btn btn--white u-margin-top-small">Explore our projects</a>
         </div>
 
         <div id="order2" class="col-2-of-5">
@@ -139,54 +142,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="row">
-          <div class=" u-margin-bottom-big">
-            <div class="section__portfolio--text ">
-              <div class="col-1-of-2 u-text--right" data-aos="zoom-in-up">
-                <h3 class="heading__tertiary ">Our Work</h3>
-                <div class="u-margin-top-big">
-                  <p class="paragraph">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.Suscipit asd
-                    sunt magnam nihil error labore odit nisi. In nobis, modi
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.Suscipit
-                    sunt magnam nihil error labore odit nisi. In nobis, modi
-                  </p>
-                </div>
-                <button class="btn btn--white u-margin-top-big">Explore our projects</button>
-              </div>
-  
-              <div class="col-1-of-2 section__portfolio--img u-flex" data-aos="fade-left">
-                <img src="../assets/images/graphic_design_cover.jpg" alt="obrazek">
-              </div>
-  
-            </div>
-          </div>
-        </div>
-  
-        <div class="row">
-          <div class="u-margin-top-huge u-margin-bottom-big">
-            <div class="section__portfolio--text ">
-  
-  
-              <div class="col-1-of-2 section__portfolio--img u-flex" data-aos="fade-right">
-                <img src="../assets/images/graphic_design_cover.jpg" alt="obrazek">
-              </div>
-              <div class="col-1-of-2 u-text--left" data-aos="zoom-in-up">
-                <h3 class="heading__tertiary ">Frost King</h3>
-                <div class="u-margin-top-big">
-                  <p class="paragraph">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.Suscipit asd
-                    sunt magnam nihil error labore odit nisi. In nobis, modi
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.Suscipit
-                    sunt magnam nihil error labore odit nisi. In nobis, modi
-                  </p>
-                </div>
-                <button class="btn btn--white u-margin-top-big">Explore our projects</button>
-              </div>
-            </div>
-          </div>
-        </div> -->
     </section>
 
     <section class="section__about">
@@ -197,19 +152,16 @@
         </div>
         <div class="u-margin-top-big">
           <div class="col-2-of-3 section__about--text">
-            <h2 class="heading__secondary">We pour <br> our <i class="fas fa-heart heart__red"></i> into every design
+            <h2 class="heading__secondary">We pour <br> 
+              <ion-icon class="icon--heart" name="heart"></ion-icon> our into every project
             </h2>
             <div>
               <p class="paragraph u-margin-top-big section__about--paragraph">
-                As an <span class="u-text__bold">award-winning</span> digital agency, our team has been
-                producting fantastic websites for over <span class="u-text__bold">15 years</span>. We do
-                what
-                we do
-                becaouse we love it and are dedicated to creating meaningul work. That's why clients hire
-                us. <span class="u-text__bold">Our hert</span> is set on their goals.
+                We are a software development company, providing a full-service
+                development of web & mobile applications, custom systems and IT solutions.
               </p>
             </div>
-            <button class="btn btn--white u-margin-top-big">Learn more</button>
+            <a href="./pages/aboutus.html" class="btn btn--white u-margin-top-big">Learn more</a>
           </div>
         </div>
       </div>
@@ -232,7 +184,7 @@
               campaigns, we help brands
               dazzle their
               audience and grow their bottom line with visible results.</p>
-            <button class="btn btn--white u-margin-top-huge">Find out how</button>
+            <a href="./pages/services.html" class="btn btn--white u-margin-top-huge">Find out how</a>
           </div>
         </div>
       </div>
@@ -242,20 +194,16 @@
         <div class="col-1-of-4">
           <div class="section__services--column">
             <div class="section__services--column--heading">
-              <h4 class="heading__quaternary section__services--column--heading--text">Web<span
+              <h4 class="heading__quaternary section__services--column--heading--text">Web <span
                   class="u-text__lighter">Design</span> </h4>
             </div>
             <img class="section__services--column--img" src="./assets/images/graphic_design_cover.jpg" alt="">
             <h4
               class="heading__quaternary u-text__bold section__services--heading u-margin-top-big u-margin-bottom-medium">
-              Creating great
-              <span class="u-text__red">website
-                exper</span></h4>
+              Creating memorable
+              <span class="u-text__red">brands</span></h4>
             <p class="paragraph">
-              is the sole reason we’re in business. This is where we shine. With over 15 years of know-how, you can
-              count
-              on us to design outstanding work in every pixel. Our programming squad plays with cutting edge technology
-              and innovative ideas. We have deep insights into many industries and an expert UX/UI team ready to roll.
+              We offer full-service creative, copy, branding and design services for businesses of all sizes and types. Whether you need a rebrand, website overhaul, or assistance creating new brand collateral, our creative team of designers, UI/UX strategists, writers, and market researchers will work together with you to bring your vision to life. We can also support your internal creative and marketing departments as your trusted team of brand and design consultants.
             </p>
           </div>
         </div>
@@ -268,15 +216,13 @@
             <img class="section__services--column--img" src="./assets/images/graphic_design_cover.jpg" alt="">
             <h4
               class="heading__quaternary u-text__bold section__services--heading u-margin-top-big u-margin-bottom-medium">
-              Building a
-              memorable
-              logo</h4>
+              Building
+              <span class="u-text__red">beautiful</span>
+               and 
+               <span class="u-text__red">functional</span>
+              websites</h4>
             <p class="paragraph">
-              is at the core of a great digital presence. If your branding is missing clarity and meaning or needs a
-              little beauty lift, our team is here to help. Creating the entire brand identity of a business is an
-              exciting task, and we can build out all aspects covering the logo/mark, brand guidelines, and related
-              print
-              materials. Let us give you the “wow” factor!
+              Your website is more than the code, we know that. Understanding your business objectives and striving to provide end-users with the best experience are of utmost importance to our team. A tailor-made website will help you achieve your business goals. Let us give you the “wow” factor!
             </p>
           </div>
         </div>
@@ -289,33 +235,27 @@
             <img class="section__services--column--img" src="./assets/images/graphic_design_cover.jpg" alt="">
             <h4
               class="heading__quaternary u-text__bold section__services--heading u-margin-top-big u-margin-bottom-medium">
-              Combining
-              quantitative
-              data with qualitative insights</h4>
+              <span class="u-text__red">Engaging,</span>
+               interactive ecommerce websites</h4>
             <p class="paragraph">
-              we can craft a powerful message that will capture attention and drive conversions. Our campaign
-              capabilities
-              help brands enrich and amplify the way they communicate with the world around them.
+              Creating an engaging ecommerce shopping experience requires a truly integrated approach. Web design, copy, and functionality should all work together to guide customers toward making quick and seamless purchases. Our team can help you strike the perfect balance of intuitive UI/UX, tech integrations, and a solid ecommerce marketing strategy to drive results.
             </p>
           </div>
         </div>
         <div class="col-1-of-4">
           <div class="section__services--column">
             <div class="section__services--column--heading">
-              <h4 class="heading__quaternary section__services--column--heading--text">Business <span
-                  class="u-text__lighter">aplications</span> </h4>
+              <h4 class="heading__quaternary section__services--column--heading--text">Digital <span
+                  class="u-text__lighter">Strategy</span> </h4>
             </div>
             <img class="section__services--column--img" src="./assets/images/graphic_design_cover.jpg" alt="">
             <h4
               class="heading__quaternary u-text__bold section__services--heading u-margin-top-big u-margin-bottom-medium">
-              <span class="u-text__red">Moving
-                pictures</span> that dazzle your
-              audience</h4>
+              <span class="u-text__red">Grab</span> 
+                your audience’s attention
+              </h4>
             <p class="paragraph">
-              In our quest for the quality we have developed our own animation and video production division. Our team
-              can
-              shoot films, create storyboards, make 3D animations, build illustration videos, and simply rock motion
-              graphics. We do everything in-house, enhancing the web design process from start to finish.
+              The digital realm provides unprecedented opportunities for today’s businesses. We now have data to broaden anecdotal evidence, precise digital ad targeting to test assumptions about target audiences, and tools like social media which allow us to create positive brand experiences long before customers try a new product or service.
             </p>
           </div>
         </div>
@@ -325,18 +265,16 @@
       <div class="row">
         <div class="col-2-of-3">
           <h2 class="heading__quaternary u-margin-bottom-medium">
-            Building Inspiring Spaces
+            Fully Responsive Websites That Help Businesses Grow
           </h2>
           <p class="paragraph heading-white">
-            We know that decisions regarding the arrangement of an apartment
-            are not easy, so you can count on our valuable tips resulting from
-            many years of experience. Design, general renovation, finishing
+            Aside from building custom websites, JSN Projects also offers E-commerce solutions that allow businesses to sell products or services, and take online payments. We also provide SEO services that not only improve a business’ position in search results, but also ensure that the website remains at the top
           </p>
         </div>
         <div class="col-1-of-3">
           <div class="section__bottom--left">
 
-            <a href="#" class="btn btn--red u-margin-bottom-small">get a free qoute</a>
+            <a href="./pages/contact.html" class="btn btn--red u-margin-bottom-small">get a free qoute</a>
             <span>Only takes a few seconds!</span>
           </div>
         </div>
@@ -399,14 +337,6 @@
     <ion-icon class="arrow-top" name="chevron-up-outline"></ion-icon>
   </div>
 
-  <!-- Scripts  -->
-
-  <script src="assets/particles/particles.js"></script>
-  <script src="scripts/scroll-color.js"></script>
-  <script src="scripts/navigation.js"></script>
-  <script>
-    particlesJS.load("particles-js", "./part.json");
-  </script>
 </body>
 
 </html>
